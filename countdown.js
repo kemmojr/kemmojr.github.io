@@ -11,14 +11,18 @@ function renderCountdown() {
     if (new Date() < endOfSemester) {
         
         document.getElementById("countdown").innerHTML = `${getDaysRemaining(endOfSemester)} days until the end of semester`;
+        document.getElementById("countdown2").innerHTML = `${getDaysRemaining(endOfExams)} days until the end of exams`;
     } else if (new Date() < endOfExams) {
-        document.getElementById("countdown").innerHTML = `${getDaysRemaining(endOfExams)} days until the end of semester`;
+        document.getElementById("countdown").innerHTML = `${getDaysRemaining(endOfExams)} days until the end of exams`;
+        document.getElementById("countdown2").innerHTML = `${getDaysRemaining(fullyGradedDate)} days until the release of results`;
         
     } else if (new Date() < fullyGradedDate) {
-        document.getElementById("countdown").innerHTML = `${getDaysRemaining(fullyGradedDate)} days until the end of semester`;
+        document.getElementById("countdown").innerHTML = `${getDaysRemaining(fullyGradedDate)} days until the release of results`;
+        document.getElementById("countdown2").innerHTML = "";
         
     } else {
         document.getElementById("countdown").innerHTML = `Congratulations on completing uni!`;
+        document.getElementById("countdown2").innerHTML = "";
 
     }
 }
