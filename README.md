@@ -1,2 +1,2 @@
-### A motivational countdown for the final strech of uni
+### A personal website
 http://kemmojr.github.io
