@@ -6,3 +6,8 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: xxx-large; 
 }
+
+#nameTitle {
+    font-size: xx-large;
+    font-size: 8vw !important;
+}
