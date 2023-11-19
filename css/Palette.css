@@ -1,0 +1,21 @@
+/* color palette with p prefixed for pure css */
+.p-bg-primary{
+    background-color: #49475B;
+}
+
+.p-bg-dark {
+    background-color: #14080E;
+}
+
+
+.p-bg-success {
+    background-color: #ACC196;
+}
+
+.p-bg-info {
+    background-color: #799496;
+}
+
+.p-bg-warning {
+    background-color: #E9EB9E;
+}
