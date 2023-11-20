@@ -1,21 +1,51 @@
 /* color palette with p prefixed for pure css */
-.p-bg-primary{
-    background-color: #49475B;
+:root {
+    --primary-color: #14080E;
+    --secondary-color: #49475B;
+    --success-color: #ACC196;
+    --info-color:  #799496;
+    --warning-color: #E9EB9E;
 }
 
-.p-bg-dark {
-    background-color: #14080E;
+.p-bg-primary{
+    background-color: var(--primary-color);
+}
+
+.p-bg-secondary {
+    background-color: var(--secondary-color);
 }
 
 
 .p-bg-success {
-    background-color: #ACC196;
+    background-color: var(--success-color);
 }
 
 .p-bg-info {
-    background-color: #799496;
+    background-color: var(--info-color);
 }
 
 .p-bg-warning {
-    background-color: #E9EB9E;
+    background-color: var(--warning-color);
+}
+
+
+.p-text-primary{
+    color: var(--primary-color);
+}
+
+.p-text-secondary {
+    color: var(--secondary-color);
+}
+
+
+.p-text-success {
+    color: var(--success-color);
+}
+
+.p-text-info {
+    color: var(--info-color);
+}
+
+.p-text-warning {
+    color: var(--warning-color);
 }
