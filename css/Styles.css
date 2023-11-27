@@ -30,16 +30,11 @@ body {
 } */
 
 .project-img {
-    height: 100%;
-    width: 100%;
-}
-
-.project-img {
-    object-fit: contain;
+    height: max-content;
 }
 
 .skill {
-    border: 3px dashed white;
+    border: 2.5px dashed white;
     border-radius: var(--bs-border-radius-3);
 }
 
