@@ -15,12 +15,8 @@ body {
     font-size: calc(6vw + 10px) !important;
     
 }
-
+/* 
 .bubble {
-    /* content: ''; */
-    /* border-top-left-radius: 50% 100% ;
-    border-top-right-radius: 50% 100%; */
-    /* position: fixed; */
     border-top-right-radius: var(--bs-border-radius-pill);
     border-top-left-radius: var(--bs-border-radius-pill);
     z-index: -1;
@@ -31,7 +27,7 @@ body {
 .bubble > div {
     margin-top: 5vh;
     background: border-box;
-}
+} */
 
 .project-img {
     height: 100%;
@@ -43,7 +39,7 @@ body {
 }
 
 .skill {
-    border: 5px dashed var(--primary-color);
+    border: 3px dashed white;
     border-radius: var(--bs-border-radius-3);
 }
 
