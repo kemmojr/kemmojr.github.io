@@ -18,8 +18,14 @@ body {
 }
 
 #header {
-    @media (min-width: 1024px) {
+    @media (min-width: 992px) {
         max-height: 100vh;
+    }
+}
+
+#header {
+    @media (max-width: 992px) {
+        position:relative !important;
     }
 }
 
