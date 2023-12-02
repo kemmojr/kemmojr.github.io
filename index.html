@@ -6,7 +6,7 @@
     <title>Timothy Kemmis</title>
     <link rel="icon" href="./images/favicon.svg">
 </head>
-<body class="d-flex min-vh-100 vw-100 vh-100 flex-column p-bg-primary overflow-y-scroll  " onload="onLoad()">
+<body class="  " onload="onLoad()">
     <script src="./Index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -14,25 +14,30 @@
     <link href="./css/Palette.css" rel="stylesheet" />
     
 
-    <div id="header" class="position-fixed d-flex flex-column flex-md-row ">
-        <a id="github" class="thumbnail-link d-inline-flex align-items-center p-2 ms-1 mt-1 p-bg-secondary " href="https://github.com/kemmojr" target="_blank">
-            <svg height="24" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true" class="">
-                <path fill="#fff" d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path>
-            </svg>
-        </a>
-        <a id="linkedin" class="thumbnail-link d-inline-flex align-items-center p-2 ms-1 mt-1 p-bg-secondary " href="https://www.linkedin.com/in/tim-kemmis/" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="#fff" class="mercado-match" width="24" height="24" focusable="false">
-                <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
-            </svg>
-        </a>
-        <a id="email" class="thumbnail-link d-inline-flex align-items-center p-2 ms-1 mt-1 p-bg-secondary " href="javascript:copyEmailToClipboard()" >
-            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="#fff" role="img">
-                <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/><script xmlns=""/>
-            </svg>
-        </a>
-    </div>
+    <div class="d-flex min-vh-100 vw-100 vh-100 flex-column p-bg-primary overflow-y-scroll">
 
+        <header id="header" class="position-sticky top-0">
+            <div id="links d-flex">
 
+                <a id="github" class="thumbnail-link d-inline-flex align-items-center p-2 ms-1 mt-1 p-bg-secondary " href="https://github.com/kemmojr" target="_blank">
+                    <svg height="24" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true" class="">
+                        <path fill="#fff" d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path>
+                    </svg>
+                </a>
+                <a id="linkedin" class="thumbnail-link d-inline-flex align-items-center p-2 ms-1 mt-1 p-bg-secondary " href="https://www.linkedin.com/in/tim-kemmis/" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="#fff" class="mercado-match" width="24" height="24" focusable="false">
+                        <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+                    </svg>
+                </a>
+                <a id="email" class="thumbnail-link d-inline-flex align-items-center p-2 ms-1 mt-1 p-bg-secondary " href="javascript:copyEmailToClipboard()" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="#fff" role="img">
+                        <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/><script xmlns=""/>
+                    </svg>
+                </a>
+            </div>
+        </header>
+    
+    
     <section class="align-self-center flex-grow-1">
         <div class="px-lg-1 mx-lg-1 align-self-lg-center container d-lg-flex justify-content-lg-center flex-lg-column align-items-lg-center  ">
             <div class="row justify-content-lg-center justify-content-end ">
@@ -45,13 +50,14 @@
                 <hr class="border border-5 opacity-75 col-10 col-lg-9 col-lg-12 col-xl-12 col-xxl-12">
             </div>
         </div>
-
+        
         <div class="container" >
             <div class="row justify-content-center">
                 
                 <p class="col-9 col-md-6 col-lg-6 col-xl-5 fs-4 my-5">
-                    Hello There. I'm Tim, a Full-Stack Engineer with over two years experience building reliable and dependable systems for  industry clients.<br />
-                    I am a Graduate from the University of Newcastle with a Bachelors Degree in Computer Science 
+                    Hello There. I'm Tim, a Full-Stack Engineer, Compuer Science Graduate and Dad. 
+                    I have over two years experience building reliable and dependable systems for industry at all levels of the Web Stack<br />
+                    
                 </p>
             </div>
             
@@ -72,7 +78,7 @@
                     <!-- put more professional experience here -->
                 </p>
             </div>
-
+            
             <div class="row justify-content-center">
                 <p class="mt-3 col-9 col-md-6 col-lg-6 col-xl-5 fs-4">
                     I'm a new Dad, currently a yellow belt in Nappy changes. <br />
@@ -81,36 +87,37 @@
             </div>
         </div>
     </section>
-
+    
     
     <section class="bubble pb-5 mt-5 align-self-center w-100 d-flex flex-column align-items-center">
         <div class=""></div>
         <div class="container px-xl-1 mx-xl-1 align-self-xl-center d-xl-flex justify-content-xl-center flex-xl-column align-items-xl-center ">
-
+            
             <div class="row text-center ">
                 <span class="line"></span>
                 <h1 class="p-text-white opacity-75  fs-1 col-12 pb-2 px-3">Projects</h1>
             </div>
             <div class="row text-center justify-content-start align-self-lg-stretch mx-lg-5 px-lg-5">
-                <h3 class="p-text-white fs-4 col-8 p-1 " >Flash platformer</h3>
-                <div class="col-10 col-sm-8 col-md-6 container">
+                <h3 class="p-text-white fs-4 col-12 col-sm-5 p-1 " >Flash platformer</h3>
+                <div class="col-12 col-sm-6 col-md-6 container">
                     <div class="text-center justify-content-start">
                         <div class="px-2 m-2 skill rounded-pill text-center d-inline-flex align-items-center justify-content-center p-text-white">Problem solving</div>
                         <div class="px-2 m-2 skill rounded-pill text-center d-inline-flex align-items-center justify-content-center p-text-white">OOP</div>
                     </div>
-                    <div class="row text-center justify-content-start p-text-white opacity-75 fs-5">
-                        My first real foray into programming. I set out to make a 2d platformer in adobe flash starting from scratch. I soon realised what a difficult problem this was, my ambitions got ahead of me. 
-                        But in the process I discovered the joy of programming when I coded my own hitbox collision system allowing for the movement of a rectangle that could jump off of a black bar. I was hooked 
-                    </div>
+                </div>
+                <div class="row col-sm-10 text-center justify-content-start p-text-white opacity-75 fs-4">
+                    My first real foray into programming. I set out to make a 2d platformer in adobe flash starting from scratch. I soon realised what a difficult problem this was, my ambitions got ahead of me. 
+                    But through the process of coding my own hitbox collision system I discovered the joy of programming. I was hooked 
                 </div>
             </div>
         </div>
         <!-- <img class="col-4 project-img align-self-center " alt="First flash project" src="./images/flash.png" /> -->
-            <div class="row w-50 justify-content-center">
-                
-            </div>
+        <div class="row w-50 justify-content-center">
+            
         </div>
-    </section>
-    
-</body>
+    </div>
+</section>
+
+</div>
+    </body>
 </html>

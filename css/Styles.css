@@ -12,7 +12,8 @@ body {
 
 #nameTitle {
     font-size: xx-large;
-    font-size: calc(6vw + 10px) !important;
+    font-size: 3rem !important;
+    font-weight: bold;
     
 }
 /* 
