@@ -16,6 +16,17 @@ body {
     font-weight: bold;
     
 }
+
+#header {
+    @media (min-width: 1024px) {
+        max-height: 100vh;
+    }
+}
+
+p {
+    color: #c5d6ef;
+}
+
 /* 
 .bubble {
     border-top-right-radius: var(--bs-border-radius-pill);
