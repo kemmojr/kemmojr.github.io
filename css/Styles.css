@@ -30,7 +30,35 @@ body {
 }
 
 p {
-    color: #c5d6ef;
+    color: var(--p-color);
+}
+
+.p {
+    color: var(--p-color);
+}
+
+.nav-indicator {
+    border: 1px solid var(--p-color);
+    width: 2rem;
+}
+
+
+.active .nav-indicator {
+    width: 4rem !important;
+    border-color: var(--white-color) !important;
+}
+
+.active .nav-text {
+    color: var(--white-color);
+    font-weight: bold;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-list li {
+    padding: 0.6rem;
 }
 
 /* 
