@@ -106,21 +106,21 @@
                         <nav class="navbar p-bg-primary d-none d-lg-block ">
                             <ul class="nav-list">
                                 <li>
-                                    <a href="#about" class="nav-link d-inline-flex align-items-center justify-content-start">
-                                        <span class="me-3 nav-indicator d-inline-block "></span>
-                                        <span class="p fs-4 nav-text">About</span>
+                                    <a href="#about" class="nav-link active d-inline-flex align-items-center justify-content-start">
+                                        <span class="me-3 nav-indicator d-inline-block transition"></span>
+                                        <span class="p fs-4 nav-text transition">About</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#experience" class="nav-link d-inline-flex align-items-center justify-content-start">
-                                        <span class="me-3 nav-indicator d-inline-block "></span>
-                                        <span class="p fs-4 nav-text">Experience</span>
+                                        <span class="me-3 nav-indicator d-inline-block transition"></span>
+                                        <span class="p fs-4 nav-text transition">Experience</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#projects" class="nav-link d-inline-flex align-items-center justify-content-start">
-                                        <span class="me-3 nav-indicator d-inline-block "></span>
-                                        <span class="p fs-4 nav-text">Projects</span>
+                                        <span class="me-3 nav-indicator d-inline-block transition"></span>
+                                        <span class="p fs-4 nav-text transition">Projects</span>
                                     </a>
                                 </li>
                             </ul>
@@ -183,8 +183,11 @@
             <div id="body" class="p-4">
                 <section id="about" class="align-self-center flex-grow-1">
                     <div class="container">
+                        <div class="row text-center mb-0">
+                            <h3 class="p-text-white fs-3 col-12 px-3">About</h3>
+                        </div>
                         <div class="row justify-content-center">
-                            <p class="col-12 fs-4 mt-5">
+                            <p class="col-12 fs-4 mt-1">
                                 I currently spend my time professionally in the world of full-stack web development. 
                     I love the variety and diversity of being able to work on new projects every day and I enjoy the challenge that each project brings.
                             </p>
@@ -209,7 +212,6 @@
                 <section id="experience" class="w-100 pb-5 mt-5">
                     <div class="container ">
                         <div class="row text-center ">
-                            <span class="line"></span>
                             <h3 class="p-text-white fs-3 col-12 pb-2 px-3">Experience</h3>
                         </div>
                         <div class="row text-center">
@@ -223,7 +225,7 @@
                             </div>
                             <div class="row col-12 text-center justify-content-start fs-4">
                                 <div class="col-4 row"></div>
-                                <p class="col-8 text-start ">
+                                <p class="col-8 text-start flex-grow-1 ">
                                     During my time doing work experience I worked with a Senior Engineer to implement a React + PHP + MySql application to serve as a admin dashboard for booking rooms and resources at their multiple campuses
                                 </p>
                             </div>
@@ -251,7 +253,7 @@
                                 <div class="col-4 row">
                                     <img class="project-img align-self-top " alt="First flash project" src="./images/flash.png">
                                 </div>
-                                <p class="col-8 text-start ">
+                                <p class="col-8 text-start  flex-grow-1 ">
                                     My first real foray into programming. I set out to make a 2d platformer in adobe flash starting from scratch. I soon realised what a difficult problem this was, my ambitions got ahead of me. 
                                     But through the process of coding my own hitbox collision system I discovered the joy of programming. I was hooked
                                 </p>
