@@ -67,6 +67,12 @@ a, .transition {
     transition-duration: .15s;
 }
 
+nav {
+    @media (min-width: 992px) {
+    position: static!important;
+}
+}
+
 /* 
 .bubble {
     border-top-right-radius: var(--bs-border-radius-pill);
