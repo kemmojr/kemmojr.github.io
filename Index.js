@@ -19,6 +19,8 @@ function calculateOffset() {
       offset = 30; // Adjust offset for smaller screens
     } else if (screenWidth < 992) { 
       offset = 60;
+    } else if (screenWidth < 1200) { 
+      offset = 70;
     } else if (screenWidth >= 1200) {
       offset = 70; // Adjust offset for larger screens
     }
@@ -34,8 +36,9 @@ function getActiveSection() {
   const scrollPosition = window.scrollY;
 
   // Iterate through each section to find which one is in the viewport
-  document.querySelectorAll('section').forEach(section => {
+  document.querySelectorAll('a.anchor').forEach(section => {
     const sectionTop = section.offsetTop - calculateOffset(); // Adjusted offset for better accuracy
+    //const sectionTop = section.offsetTop - calculateOffset(); // Adjusted offset for better accuracy
     const id = section.getAttribute('id');
 
     

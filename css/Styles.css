@@ -77,6 +77,12 @@ nav {
     background-color: red !important;
 }
 
+a.anchor {
+    display: block;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
+}
 /* 
 .bubble {
     border-top-right-radius: var(--bs-border-radius-pill);
