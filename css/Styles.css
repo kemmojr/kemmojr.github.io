@@ -69,8 +69,12 @@ a, .transition {
 
 nav {
     @media (min-width: 992px) {
-    position: static!important;
+        position: static!important;
+    }
 }
+
+.nav-list:first-child > a {
+    background-color: red !important;
 }
 
 /* 
