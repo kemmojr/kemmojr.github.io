@@ -9,7 +9,6 @@ function loadListeners() {
     document.querySelectorAll('.nav-link ').forEach(link => {
         link.addEventListener('click', () => {
           setTimeout(() => {
-            console.log('hi');
             const openedCanvas = document.getElementById('closeNavBar');
             openedCanvas.click();
           }, 500);
