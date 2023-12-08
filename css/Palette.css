@@ -59,3 +59,7 @@
 .p-text-white {
     color: var(--white-color);
 }
+
+.p-text-light-grey {
+    color: lightgray;
+}
