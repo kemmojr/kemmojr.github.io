@@ -1,5 +1,5 @@
 //my current email
-const email = 'kemmojr@gmail.com';
+const email = 'TimothydKemmis@gmail.com';
 
 function loadListeners() {
     document.getElementById('aboutButton').addEventListener('click', () => {
