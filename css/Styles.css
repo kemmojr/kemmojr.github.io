@@ -80,6 +80,12 @@ nav {
     }
 }
 
+#header, #content {
+    @media (min-width: 992px) {
+        max-width: 50vw;
+    }
+}
+
 .nav-list:first-child > a {
     background-color: red !important;
 }
