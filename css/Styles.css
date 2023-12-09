@@ -96,6 +96,9 @@ a.anchor {
   visibility: hidden;
 }
 
+#about.anchor {
+  top: -500px !important;
+}
 /* Fading in and out */
 
 /* .fade {

@@ -7,10 +7,6 @@ const observerOptions = {
 };
 
 function loadListeners() {
-  document.getElementById("aboutButton").addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
-
   document.querySelectorAll(".nav-link ").forEach(link => {
     link.addEventListener("click", () => {
       setTimeout(() => {
@@ -64,11 +60,7 @@ function getActiveSection() {
       navLinks.forEach(link => link.classList.remove("active"));
 
       // Add active class to the corresponding link
-      if (id === "about") {
-        document.getElementById(`${id}Button`).classList.add("active");
-      } else {
-        document.querySelector(`nav ul li a[href="#${id}"]`).classList.add("active");
-      }
+      document.querySelector(`nav ul li a[href="#${id}"]`).classList.add("active");
     }
   });
 }
