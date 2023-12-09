@@ -6,9 +6,8 @@ body {
     scroll-behavior: smooth;
 }
 
-.countdown {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: xxx-large; 
+.pointer {
+    cursor: pointer;
 }
 
 #nameTitle {
