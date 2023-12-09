@@ -1,100 +1,113 @@
 @import url(Palette.css);
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #fff;
-    max-width: 99vw;
-    scroll-behavior: smooth;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #fff;
+  max-width: 99vw;
+  scroll-behavior: smooth;
 }
 
 .pointer {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #nameTitle {
-    font-size: xx-large;
-    font-size: 3rem !important;
-    font-weight: bold;
-    
+  font-size: xx-large;
+  font-size: 3rem !important;
+  font-weight: bold;
 }
 
 #header {
-    @media (min-width: 992px) {
-        max-height: 100vh;
-    }
+  @media (min-width: 992px) {
+    max-height: 100vh;
+  }
 }
 
 #header {
-    @media (max-width: 992px) {
-        position:relative !important;
-    }
+  @media (max-width: 992px) {
+    position: relative !important;
+  }
 }
 
 #links-offcanvas {
-    @media (min-width: 992px) {
-        display: none !important;
-    }
+  @media (min-width: 992px) {
+    display: none !important;
+  }
 }
 
 p {
-    color: var(--p-color);
+  color: var(--p-color);
 }
 
 .p {
-    color: var(--p-color);
+  color: var(--p-color);
 }
 
 .nav-indicator {
-    border: 1px solid var(--p-color);
-    width: 2rem;
+  border: 1px solid var(--p-color);
+  width: 2rem;
 }
 
-
 .active .nav-indicator {
-    width: 4rem !important;
-    border-color: var(--white-color) !important;
+  width: 4rem !important;
+  border-color: var(--white-color) !important;
 }
 
 .active .nav-text {
-    color: var(--white-color);
-    font-weight: bold;
+  color: var(--white-color);
+  font-weight: bold;
 }
 
 .nav-list {
-    list-style: none;
+  list-style: none;
 }
 
 .nav-list li {
-    padding: 0.6rem;
+  padding: 0.6rem;
 }
 
-a, .transition {
-    transition-property: all;
-    transition-timing-function: cubic-bezier(.4,0,.2,1);
-    transition-duration: .15s;
+a,
+.transition {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
 }
 
 nav {
-    @media (min-width: 992px) {
-        position: static!important;
-    }
+  @media (min-width: 992px) {
+    position: static !important;
+  }
 }
 
-#header, #content {
-    @media (min-width: 992px) {
-        max-width: 50vw;
-    }
+#header,
+#content {
+  @media (min-width: 992px) {
+    max-width: 50vw;
+  }
 }
 
 .nav-list:first-child > a {
-    background-color: red !important;
+  background-color: red !important;
 }
 
 a.anchor {
-    display: block;
-    position: relative;
-    top: -100px;
-    visibility: hidden;
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
 }
+
+/* Fading in and out */
+
+/* .fade {
+  transition: opacity 0.7s ease-in;
+}
+
+.fadeOut {
+  opacity: 0;
+}
+.fadeIn {
+  opacity: 1;
+} */
 /* 
 .bubble {
     border-top-right-radius: var(--bs-border-radius-pill);
@@ -110,14 +123,13 @@ a.anchor {
 } */
 
 .project-img {
-    height: max-content;
+  height: max-content;
 }
 
 .skill {
-    border: 2.5px dashed white;
-    border-radius: var(--bs-border-radius-3);
+  border: 2.5px dashed white;
+  border-radius: var(--bs-border-radius-3);
 }
-
 
 /*  Curves   */
 
