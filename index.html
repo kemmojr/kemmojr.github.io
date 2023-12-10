@@ -7,7 +7,8 @@
     <link rel="icon" href="./images/favicon.svg" />
   </head>
   <body class="min-vh-100 vw-100 vh-100 p-bg-primary overflow-y-scroll" onload="loadListeners()">
-    <script src="./Index.js"></script>
+    <script src="./scripts/Index.js"></script>
+    <script src="./scripts/dad-joke-generator.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
     <link href="./css/Styles.css" rel="stylesheet" />
@@ -202,27 +203,71 @@
               <span class="line"></span>
               <h3 class="p-text-white fs-3 col-12 pb-2 px-3">Projects</h3>
             </div>
-            <div class="row text-center mb-5 fade">
+            <div class="row text-center mb-5">
+              <div class="row col-12 col-sm-5 p-1">
+                <h3 class="p-text-white fs-4">Dad Joke Generator</h3>
+                <p class="fs-4 p-text-light-grey">Dec 2023</p>
+              </div>
+              <div class="d-flex justify-content-start col-12 col-sm-5 p-1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" id="showMeTheDadJokes" class="inline-block project-link" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path></svg>
+              </div>
+              <div class="row col-12 text-center justify-content-start fs-4">
+                <div class="col-8 col-md-4 row order-2 order-md-1 justify-content-center fade">
+                  <div class="container">
+                    <h2 class="fs-2 p-text-white">Loading Dad Joke...</h2>
+                    <div class="row cols-9 border border-5 border-white rounded-3">
+                      <div class="loading-bar-cell col-1 my-3 ms-3 me-1 d-none d-md-block d-lg-none d-xxl-block"></div>
+                      <div class="loading-bar-cell col-1 my-3 mx-1 d-none d-sm-block d-lg-none d-xl-block"></div>
+                      <div class="loading-bar-cell col-1 my-3 mx-1 d-block d-lg-none d-xl-block"></div>
+                      <div class="loading-bar-cell col-1 my-3 ms-1 me-2"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="col-8 text-start flex-grow-1 order-1 order-md-2 fade">This was a fun weekend project to make an app in multiple different ways. simply press the button and it spits out a dad joke. It gets the jokes from the from the icanhazdadjoke.com API. It was coded in ASP.Net 7 MVC, Python and frontend JavaScipt </p>
+              </div>
+              <div class="col-12 col-sm-6 col-md-6 container mt-4 mb-5 pb-5 fade">
+                <div class="text-center justify-content-start">
+                  <h5 class="px-2 m-2 skill rounded-pill text-center d-inline-flex p-text-white">JSON</h5>
+                  <h5 class="px-2 m-2 skill rounded-pill text-center d-inline-flex p-text-white">JavaScript</h5>
+                  <h5 class="px-2 m-2 skill rounded-pill text-center d-inline-flex p-text-white">ASP.Net Web API</h5>
+                  <h5 class="px-2 m-2 skill rounded-pill text-center d-inline-flex p-text-white">REST API</h5>
+                  <h5 class="px-2 m-2 skill rounded-pill text-center d-inline-flex p-text-white">Python</h5>
+                </div>
+              </div>
+            </div>
+            <div class="row text-center mb-5">
               <div class="row col-12 col-sm-5 p-1">
                 <h3 class="p-text-white fs-4">Flash platformer</h3>
                 <p class="fs-4 p-text-light-grey">Jun 2015</p>
               </div>
-              <div class="col-12 col-sm-6 col-md-6 container">
+              <div class="row col-12 text-center justify-content-start fs-4">
+                <div class="col-8 col-md-4 row order-2 order-md-1 fade">
+                  <img class="project-img align-self-top" alt="First flash project" src="./images/flash.png" />
+                </div>
+                <p class="col-8 text-start flex-grow-1 order-1 order-md-2 fade"> My first real foray into programming. I set out to make a 2d platformer in adobe flash starting from scratch. I soon realised what a difficult problem this was, my ambitions got ahead of me. But through the process of coding my own hitbox collision system I discovered the joy of programming. I was hooked </p>
+              </div>
+              <div class="col-12 col-sm-6 col-md-6 container mt-4 mb-5 pb-5 fade">
                 <div class="text-center justify-content-start">
                   <h5 class="px-2 m-2 skill rounded-pill text-center d-inline-flex p-text-white">Problem solving</h5>
                   <h5 class="px-2 m-2 skill rounded-pill text-center d-inline-flex p-text-white">OOP</h5>
                 </div>
               </div>
-              <div class="row col-12 text-center justify-content-start fs-4">
-                <div class="col-8 col-md-4 row order-2 order-md-1">
-                  <img class="project-img align-self-top" alt="First flash project" src="./images/flash.png" />
-                </div>
-                <p class="col-8 text-start flex-grow-1 order-1 order-md-2"> My first real foray into programming. I set out to make a 2d platformer in adobe flash starting from scratch. I soon realised what a difficult problem this was, my ambitions got ahead of me. But through the process of coding my own hitbox collision system I discovered the joy of programming. I was hooked </p>
-              </div>
             </div>
           </div>
         </section>
       </div>
+      <dialog id="dadJokeGenerator" class="dad-joke-modal w-75">
+        <form method="dialog" class="d-flex justify-content-end">
+          <button class="btn-close" type="close"></button>
+        </form>
+
+        <div class="text-center">
+          <h1 class="display-4">Hello There</h1>
+          <p class="text-black">Would you care for a dad joke?</p>
+          <button type="button" id="getDadJoke">*Groan*</button>
+          <div><p class="text-black" id="currentDadJoke"></p></div>
+        </div>
+      </dialog>
     </div>
   </body>
 </html>

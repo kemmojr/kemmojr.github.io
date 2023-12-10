@@ -99,6 +99,20 @@ a.anchor {
 #about.anchor {
   top: -500px !important;
 }
+
+.loading-bar-cell {
+  border: solid 5px #fff;
+  fill: #fff;
+}
+
+.project-link {
+  display: inline-block;
+  height: 3rem;
+}
+
+.dad-joke-modal {
+  /* height: 200px; */
+}
 /* Fading in and out */
 
 /* .fade {
