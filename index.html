@@ -209,7 +209,7 @@
                 <p class="fs-4 p-text-light-grey">Dec 2023</p>
               </div>
               <div class="d-flex justify-content-start col-12 col-sm-5 p-1">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" id="showMeTheDadJokes" class="inline-block project-link" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" id="showMeTheDadJokes" class="inline-block project-link" data-bs-toggle="modal" data-bs-target="#dadJokeModal" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path></svg>
               </div>
               <div class="row col-12 text-center justify-content-start fs-4">
                 <div class="col-8 col-md-4 row order-2 order-md-1 justify-content-center fade">
@@ -260,14 +260,28 @@
         <form method="dialog" class="d-flex justify-content-end">
           <button class="btn-close" type="close"></button>
         </form>
-
-        <div class="text-center">
-          <h1 class="display-4">Hello There</h1>
-          <p class="text-black">Would you care for a dad joke?</p>
-          <button type="button" id="getDadJoke">*Groan*</button>
-          <div><p class="text-black" id="currentDadJoke"></p></div>
-        </div>
       </dialog>
+      <div class="modal fade" id="dadJokeModal" tabindex="-1" aria-labelledby="dadJokeModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5 text-black" id="dadJokeModalLabel">Dad Joke Generator</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="text-center">
+                <h1 class="display-4 text-black">Hello There</h1>
+                <p class="text-black">Would you care for a dad joke?</p>
+                <button type="button" id="getDadJoke">*Groan*</button>
+                <div><p class="text-black" id="currentDadJoke"></p></div>
+              </div>
+            </div>
+            <div class="modal-footer justify-content-center">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

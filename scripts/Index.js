@@ -21,7 +21,6 @@ function loadListeners() {
   const fadeElms = document.querySelectorAll(".fade");
   fadeElms.forEach(el => observer.observe(el));
 
-  document.getElementById("showMeTheDadJokes").addEventListener("click", showJokeModal);
   document.getElementById("getDadJoke").addEventListener("click", cmonDad);
 }
 
