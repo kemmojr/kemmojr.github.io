@@ -22,6 +22,10 @@ function loadListeners() {
   fadeElms.forEach(el => observer.observe(el));
 
   document.getElementById("getDadJoke").addEventListener("click", cmonDad);
+
+  document.querySelector(".accordion-button").addEventListener("click", ev => {
+    window.scrollTo({ top: 0, scrolling: "smooth" });
+  });
 }
 
 function calculateOffset() {
@@ -65,6 +69,15 @@ function getActiveSection() {
       document.querySelector(`nav ul li a[href="#${id}"]`).classList.add("active");
     }
   });
+
+  if (scrollPosition > 1 && document.querySelector(".custom-accordion").classList.contains("fade-out")) {
+    document.querySelector(".accordion-button").classList.remove("collapsed");
+    document.querySelector(".custom-accordion").classList.toggle("fade-out");
+  } else if (scrollPosition === 0 && !document.querySelector(".custom-accordion").classList.contains("fade-out")) {
+    setTimeout(() => {
+      document.querySelector(".custom-accordion").classList.toggle("fade-out");
+    }, 500);
+  }
 }
 
 // Listen for scroll events and call the function to update active section
