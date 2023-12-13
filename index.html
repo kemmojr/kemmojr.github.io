@@ -1,339 +1,449 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Timothy Kemmis</title>
-    <link rel="icon" href="./images/favicon.svg" />
-  </head>
-  <body class="min-vh-100 vw-100 vh-100 p-bg-primary overflow-y-scroll" onload="loadListeners()">
-    <script src="./scripts/Index.js"></script>
-    <script src="./scripts/dad-joke-generator.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
-    <link href="./css/Styles.css" rel="stylesheet" />
-    <link href="./css/Palette.css" rel="stylesheet" />
-    <div class="d-flex flex-column flex-lg-row">
-      <header id="header" class="position-sticky top-0 d-flex flex-column ps-5 pe-2 py-5 justify-content-between">
-        <div class="px-lg-1 pt-3 mx-lg-1 align-self-lg-center container d-lg-flex justify-content-lg-center flex-lg-column align-items-lg-center">
-          <div class="row justify-content-start">
-            <h1 class="p-text-white fs-1 col-10 col-lg-9 col-lg-12 col-xl-12 col-xxl-12" id="nameTitle">Timothy Kemmis</h1>
-            <h4 class="p-text-white fs-4 col-10 col-lg-9 col-lg-12 col-xl-12 col-xxl-12">Full-Stack Engineer | Computer Science Graduate | Dad</h4>
-            <p class="fs-4 col-10 col-lg-9 col-lg-12 col-xl-12 col-xxl-12"></p>
-            <h4 class="p-text-white text-start m-0 col-12 fs-4"> Hello There. </h4>
-            <p class="col-12 fs-4 mb-5"> I'm Tim. I've been building reliable and dependable systems for industry for the last two years. </p>
-            <nav class="navbar navbar-dark p-bg-primary fixed-top navbar-expand-lg d-lg-block">
-              <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-                  <div class="offcanvas-header">
-                    <h4 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Hello There</h4>
-                    <button id="closeNavBar" type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                  </div>
-                  <div class="offcanvas-body">
-                    <ul class="nav-list">
-                      <li>
-                        <a href="#about" class="nav-link active d-inline-flex align-items-center justify-content-start">
-                          <span class="me-3 nav-indicator d-inline-block transition"></span>
-                          <span class="p fs-4 nav-text transition">About</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#experience" class="nav-link d-inline-flex align-items-center justify-content-start">
-                          <span class="me-3 nav-indicator d-inline-block transition"></span>
-                          <span class="p fs-4 nav-text transition">Experience</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#projects" class="nav-link d-inline-flex align-items-center justify-content-start">
-                          <span class="me-3 nav-indicator d-inline-block transition"></span>
-                          <span class="p fs-4 nav-text transition">Projects</span>
-                        </a>
-                      </li>
-                    </ul>
-                    <div id="links-offcanvas" class="d-flex justify-content-center pb-5 pt-5 mt-5">
-                      <a id="github-offcanvas" class="thumbnail-link d-inline-flex align-items-center p-2 ms-1 mt-1 mx-2 p-bg-secondary" href="https://github.com/kemmojr" target="_blank">
-                        <svg height="24" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true" class="">
-                          <path
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Timothy Kemmis</title>
+        <link rel="icon" href="./images/favicon.svg">
+    </head>
+    <body class="min-vh-100 vw-100 vh-100 p-bg-primary overflow-y-scroll" onload="loadListeners()">
+        <script src="./scripts/Index.js"></script>
+        <script src="./scripts/dad-joke-generator.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+            crossorigin="anonymous"
+        >
+        <link href="./css/Styles.css" rel="stylesheet">
+        <link href="./css/Palette.css" rel="stylesheet">
+        <div class="d-flex flex-column flex-lg-row">
+            <header id="header" class="position-sticky top-0 d-flex flex-column ps-5 pe-2 py-5 justify-content-between">
+                <div class="px-lg-1 pt-3 mx-lg-1 align-self-lg-center container d-lg-flex justify-content-lg-center flex-lg-column align-items-lg-center">
+                    <div class="row justify-content-start">
+                        <h1 class="p-text-white fs-1 col-10 col-lg-9 col-lg-12 col-xl-12 col-xxl-12" id="nameTitle">Timothy Kemmis</h1>
+                        <h4 class="p-text-white fs-4 col-10 col-lg-9 col-lg-12 col-xl-12 col-xxl-12">Full-Stack Engineer | Computer Science Graduate | Dad</h4>
+                        <p class="fs-4 col-10 col-lg-9 col-lg-12 col-xl-12 col-xxl-12"></p>
+                        <h4 class="p-text-white text-start m-0 col-12 fs-4"> Hello There.</h4>
+                        <p class="col-12 fs-4 mb-5"> I'm Tim. I've been building reliable and dependable systems for industry for the last two years.</p>
+                        <nav class="navbar navbar-dark p-bg-primary fixed-top navbar-expand-lg d-lg-block">
+                            <div class="container-fluid">
+                                <button
+                                    class="navbar-toggler"
+                                    type="button"
+                                    data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasDarkNavbar"
+                                    aria-controls="offcanvasDarkNavbar"
+                                >
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div
+                                    class="offcanvas offcanvas-start text-bg-dark"
+                                    tabindex="-1"
+                                    id="offcanvasDarkNavbar"
+                                    aria-labelledby="offcanvasDarkNavbarLabel"
+                                >
+                                    <div class="offcanvas-header">
+                                        <h4 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Hello There</h4>
+                                        <button
+                                            id="closeNavBar"
+                                            type="button"
+                                            class="btn-close btn-close-white"
+                                            data-bs-dismiss="offcanvas"
+                                            aria-label="Close"
+                                        ></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <ul class="nav-list">
+                                            <li>
+                                                <a href="#about" class="nav-link active d-inline-flex align-items-center justify-content-start">
+                                                    <span class="me-3 nav-indicator d-inline-block transition"></span>
+                                                    <span class="p fs-4 nav-text transition">About</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#experience" class="nav-link d-inline-flex align-items-center justify-content-start">
+                                                    <span class="me-3 nav-indicator d-inline-block transition"></span>
+                                                    <span class="p fs-4 nav-text transition">Experience</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#projects" class="nav-link d-inline-flex align-items-center justify-content-start">
+                                                    <span class="me-3 nav-indicator d-inline-block transition"></span>
+                                                    <span class="p fs-4 nav-text transition">Projects</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div id="links-offcanvas" class="d-flex justify-content-center pb-5 pt-5 mt-5">
+                                            <a
+                                                id="github-offcanvas"
+                                                class="thumbnail-link d-inline-flex align-items-center p-2 ms-1 mt-1 mx-2 p-bg-secondary"
+                                                href="https://github.com/kemmojr"
+                                                target="_blank"
+                                            >
+                                                <svg
+                                                    height="24"
+                                                    aria-hidden="true"
+                                                    viewBox="0 0 16 16"
+                                                    version="1.1"
+                                                    width="24"
+                                                    data-view-component="true"
+                                                    class=""
+                                                >
+                                                    <path fill="#fff" d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path>
+                                                </svg>
+                                            </a>
+                                            <a
+                                                id="linkedin-offcanvas"
+                                                class="thumbnail-link d-inline-flex align-items-center p-2 ms-1 mt-1 mx-2 p-bg-secondary"
+                                                href="https://www.linkedin.com/in/tim-kemmis/"
+                                                target="_blank"
+                                            >
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 24 24"
+                                                    data-supported-dps="24x24"
+                                                    fill="#fff"
+                                                    class="mercado-match"
+                                                    width="24"
+                                                    height="24"
+                                                    focusable="false"
+                                                >
+                                                    <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+                                                </svg>
+                                            </a>
+                                            <a id="email-offcanvas" class="thumbnail-link d-inline-flex align-items-center p-2 ms-1 mt-1 mx-2 p-bg-secondary" href="javascript:copyEmailToClipboard()">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="24px"
+                                                    height="24px"
+                                                    viewBox="0 0 24 24"
+                                                    fill="#fff"
+                                                    role="img"
+                                                >
+                                                    <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/>
+                                                    <script xmlns=""/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                        <svg
                             fill="#fff"
-                            d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"
-                          ></path>
+                            width="100px"
+                            height="100px"
+                            viewBox="0 0 512 512"
+                            enable-background="new 0 0 512 512"
+                            id="Helmet_x5F_safety"
+                            version="1.1"
+                            xml:space="preserve"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                        >
+                            <g id="Helmet_x5F_safety_1_">
+                                <rect
+                                    height="11.439"
+                                    width="11.44"
+                                    x="404.478"
+                                    y="237.888"
+                                />
+                                <rect
+                                    height="11.439"
+                                    width="11.439"
+                                    x="95.254"
+                                    y="237.888"
+                                />
+                                <path d="M456.396,325.986c0-13.08-3.92-25.84-11.635-37.957c0.377-2.445,0.57-4.933,0.57-7.461   c0-70.74-37.072-136.222-96.75-170.893c-22.879-13.292-47.654-21.359-73.717-24.014c-2.893-6.823-9.658-11.622-17.523-11.622   h-3.512c-10.488,0-19.021,8.533-19.021,19.021v134.744h-4.897v28.156h-15.442c-9.68,0-17.555,7.875-17.555,17.555v15.441h-28.156   v6.349c-15.465-3.218-29.278-7.271-41.163-12.013c53.587-20.506,89.802-72.176,89.802-130.718c0-16.994-2.995-33.515-8.9-49.209   c4.816-1.381,9.719-2.566,14.707-3.533l-2.284-11.78c-78.764,15.272-138.486,79.96-151.567,159.586l-0.532,0.533l0.321,0.774   c-1.626,10.32-2.478,20.884-2.478,31.624c0,2.53,0.207,5.015,0.575,7.46c-7.715,12.118-11.635,24.879-11.635,37.957   c0,30.604,21.332,59.086,60.066,80.202c37.583,20.488,87.422,31.772,140.336,31.772c52.908,0,102.744-11.284,140.326-31.772   C435.065,385.072,456.396,356.59,456.396,325.986z M314.258,340.307h28.154v-4.832c40.37-7.959,69.932-20.969,86.777-37.824   c-14.561,28.721-65.284,45.322-114.932,51.873V340.307z M296.702,255.961H281.26v-28.156h-4.896V97.915   c9.201,1.083,18.226,2.89,27.044,5.417c-5.918,15.71-8.919,32.242-8.919,49.243c0,58.604,36.277,110.304,89.945,130.767   c-0.749,0.298-1.506,0.594-2.271,0.886l4.281,11.21c20.964-8.007,36.464-17.853,46.311-29.387c0.041,0.531,0.094,1.06,0.131,1.592   l-0.023-0.005c-4.478,24.636-37.309,44.724-90.449,55.595v-15.512c10.869-2.148,21.124-4.711,30.543-7.635l-3.559-11.461   c-8.342,2.591-17.398,4.883-26.984,6.848v-6.516h-28.154v-15.441C314.258,263.836,306.383,255.961,296.702,255.961z    M314.258,300.957h16.154v27.35h-16.154V300.957z M430.426,247.587c-4.613,10.526-14.855,20.159-30.035,28.368   c-55.404-15.245-93.902-65.65-93.902-123.38c0-15.729,2.811-31.015,8.346-45.523c9.521,3.475,18.776,7.804,27.72,13   C389.136,147.114,421.017,194.237,430.426,247.587z M246.808,93.061c0-3.872,3.15-7.021,7.021-7.021h3.512   c3.872,0,7.021,3.15,7.021,7.021v134.744h-17.555V93.061z M241.911,239.805h27.349v16.156h-27.349V239.805z M208.915,273.516   c0-3.063,2.492-5.555,5.555-5.555h15.442h51.349h15.442c3.063,0,5.556,2.492,5.556,5.555v15.441v51.35v15.441   c0,3.063-2.492,5.555-5.556,5.555h-82.233c-3.063,0-5.555-2.491-5.555-5.555v-15.441v-51.35V273.516z M180.759,300.957h16.156   v27.35h-16.156V300.957z M168.759,323.016c-51.775-10.75-84.172-30.403-89.286-54.471c-0.104-0.46-0.192-0.928-0.266-1.395   l-0.066,0.011c0.029-0.42,0.062-0.839,0.094-1.259c16.005,18.646,46.922,33.129,89.524,41.658V323.016z M197.068,107.077   c5.525,14.495,8.331,29.772,8.331,45.498c0,57.656-38.413,108.025-93.713,123.336c-13.577-7.343-23.325-15.837-28.514-25.123   l0.171-0.171l-1.781-3.214C92.958,182.735,137.103,128.903,197.068,107.077z M390.588,395.652   c-35.85,19.545-83.646,30.309-134.582,30.309c-50.941,0-98.741-10.764-134.593-30.309c-34.7-18.916-53.81-43.657-53.81-69.666   c0-7.537,1.618-14.996,4.808-22.283c4.18,7.957,10.616,15.342,19.317,22.08c0.539,0.419,1.088,0.838,1.647,1.258l0.353,0.256   c0.225,0.162,0.447,0.322,0.738,0.537l1.099,0.783c0.702,0.49,1.414,0.973,2.207,1.508c5.131,3.411,10.933,6.646,17.245,9.619   l5.111-10.857c-5.782-2.723-11.069-5.668-15.717-8.758c-0.661-0.447-1.323-0.895-1.898-1.295l-0.955-0.68   c-0.27-0.2-0.54-0.395-0.814-0.593l-0.214-0.155c-0.487-0.365-0.966-0.73-1.446-1.104c-7.569-5.861-13.049-12.2-16.417-18.957   c16.679,16.864,46.049,29.913,86.09,37.92v5.041h28.156v9.096c-21.727-2.961-43.795-8.035-61.459-14.19l-3.948,11.332   c19.11,6.659,43.104,12.101,66.45,15.106c2.432,6.781,8.905,11.652,16.512,11.652h82.233c7.563,0,14.007-4.816,16.47-11.537   c66.313-8.223,111.127-29.219,126.381-58.146c3.215,7.314,4.844,14.801,4.844,22.367   C444.396,351.995,425.287,376.736,390.588,395.652z"/>
+                                <path d="M255.586,354.154c21.793,0,39.522-17.729,39.522-39.522s-17.729-39.522-39.522-39.522s-39.523,17.729-39.523,39.522   S233.793,354.154,255.586,354.154z M255.586,287.109c15.176,0,27.522,12.347,27.522,27.522c0,15.177-12.347,27.522-27.522,27.522   c-15.176,0-27.523-12.346-27.523-27.522C228.063,299.456,240.41,287.109,255.586,287.109z"/>
+                                <path d="M255.586,330.846c8.94,0,16.214-7.273,16.214-16.214s-7.273-16.214-16.214-16.214s-16.214,7.273-16.214,16.214   S246.646,330.846,255.586,330.846z M255.586,310.418c2.324,0,4.214,1.891,4.214,4.214s-1.89,4.214-4.214,4.214   c-2.324,0-4.214-1.891-4.214-4.214S253.262,310.418,255.586,310.418z"/>
+                            </g>
                         </svg>
-                      </a>
-                      <a id="linkedin-offcanvas" class="thumbnail-link d-inline-flex align-items-center p-2 ms-1 mt-1 mx-2 p-bg-secondary" href="https://www.linkedin.com/in/tim-kemmis/" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="#fff" class="mercado-match" width="24" height="24" focusable="false">
-                          <path
-                            d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"
-                          ></path>
-                        </svg>
-                      </a>
-                      <a id="email-offcanvas" class="thumbnail-link d-inline-flex align-items-center p-2 ms-1 mt-1 mx-2 p-bg-secondary" href="javascript:copyEmailToClipboard()">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="#fff" role="img">
-                          <path
-                            d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"
-                          />
-                          <script xmlns="" />
-                        </svg>
-                      </a>
+                        <h3 class="p-text-white fs-3 text-center">Site Currently Under Construction</h3>
                     </div>
-                  </div>
                 </div>
-              </div>
-            </nav>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row justify-content-center">
-            <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-            <svg
-              fill="#fff"
-              width="100px"
-              height="100px"
-              viewBox="0 0 512 512"
-              enable-background="new 0 0 512 512"
-              id="Helmet_x5F_safety"
-              version="1.1"
-              xml:space="preserve"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-            >
-              <g id="Helmet_x5F_safety_1_">
-                <rect height="11.439" width="11.44" x="404.478" y="237.888" />
-
-                <rect height="11.439" width="11.439" x="95.254" y="237.888" />
-
-                <path
-                  d="M456.396,325.986c0-13.08-3.92-25.84-11.635-37.957c0.377-2.445,0.57-4.933,0.57-7.461   c0-70.74-37.072-136.222-96.75-170.893c-22.879-13.292-47.654-21.359-73.717-24.014c-2.893-6.823-9.658-11.622-17.523-11.622   h-3.512c-10.488,0-19.021,8.533-19.021,19.021v134.744h-4.897v28.156h-15.442c-9.68,0-17.555,7.875-17.555,17.555v15.441h-28.156   v6.349c-15.465-3.218-29.278-7.271-41.163-12.013c53.587-20.506,89.802-72.176,89.802-130.718c0-16.994-2.995-33.515-8.9-49.209   c4.816-1.381,9.719-2.566,14.707-3.533l-2.284-11.78c-78.764,15.272-138.486,79.96-151.567,159.586l-0.532,0.533l0.321,0.774   c-1.626,10.32-2.478,20.884-2.478,31.624c0,2.53,0.207,5.015,0.575,7.46c-7.715,12.118-11.635,24.879-11.635,37.957   c0,30.604,21.332,59.086,60.066,80.202c37.583,20.488,87.422,31.772,140.336,31.772c52.908,0,102.744-11.284,140.326-31.772   C435.065,385.072,456.396,356.59,456.396,325.986z M314.258,340.307h28.154v-4.832c40.37-7.959,69.932-20.969,86.777-37.824   c-14.561,28.721-65.284,45.322-114.932,51.873V340.307z M296.702,255.961H281.26v-28.156h-4.896V97.915   c9.201,1.083,18.226,2.89,27.044,5.417c-5.918,15.71-8.919,32.242-8.919,49.243c0,58.604,36.277,110.304,89.945,130.767   c-0.749,0.298-1.506,0.594-2.271,0.886l4.281,11.21c20.964-8.007,36.464-17.853,46.311-29.387c0.041,0.531,0.094,1.06,0.131,1.592   l-0.023-0.005c-4.478,24.636-37.309,44.724-90.449,55.595v-15.512c10.869-2.148,21.124-4.711,30.543-7.635l-3.559-11.461   c-8.342,2.591-17.398,4.883-26.984,6.848v-6.516h-28.154v-15.441C314.258,263.836,306.383,255.961,296.702,255.961z    M314.258,300.957h16.154v27.35h-16.154V300.957z M430.426,247.587c-4.613,10.526-14.855,20.159-30.035,28.368   c-55.404-15.245-93.902-65.65-93.902-123.38c0-15.729,2.811-31.015,8.346-45.523c9.521,3.475,18.776,7.804,27.72,13   C389.136,147.114,421.017,194.237,430.426,247.587z M246.808,93.061c0-3.872,3.15-7.021,7.021-7.021h3.512   c3.872,0,7.021,3.15,7.021,7.021v134.744h-17.555V93.061z M241.911,239.805h27.349v16.156h-27.349V239.805z M208.915,273.516   c0-3.063,2.492-5.555,5.555-5.555h15.442h51.349h15.442c3.063,0,5.556,2.492,5.556,5.555v15.441v51.35v15.441   c0,3.063-2.492,5.555-5.556,5.555h-82.233c-3.063,0-5.555-2.491-5.555-5.555v-15.441v-51.35V273.516z M180.759,300.957h16.156   v27.35h-16.156V300.957z M168.759,323.016c-51.775-10.75-84.172-30.403-89.286-54.471c-0.104-0.46-0.192-0.928-0.266-1.395   l-0.066,0.011c0.029-0.42,0.062-0.839,0.094-1.259c16.005,18.646,46.922,33.129,89.524,41.658V323.016z M197.068,107.077   c5.525,14.495,8.331,29.772,8.331,45.498c0,57.656-38.413,108.025-93.713,123.336c-13.577-7.343-23.325-15.837-28.514-25.123   l0.171-0.171l-1.781-3.214C92.958,182.735,137.103,128.903,197.068,107.077z M390.588,395.652   c-35.85,19.545-83.646,30.309-134.582,30.309c-50.941,0-98.741-10.764-134.593-30.309c-34.7-18.916-53.81-43.657-53.81-69.666   c0-7.537,1.618-14.996,4.808-22.283c4.18,7.957,10.616,15.342,19.317,22.08c0.539,0.419,1.088,0.838,1.647,1.258l0.353,0.256   c0.225,0.162,0.447,0.322,0.738,0.537l1.099,0.783c0.702,0.49,1.414,0.973,2.207,1.508c5.131,3.411,10.933,6.646,17.245,9.619   l5.111-10.857c-5.782-2.723-11.069-5.668-15.717-8.758c-0.661-0.447-1.323-0.895-1.898-1.295l-0.955-0.68   c-0.27-0.2-0.54-0.395-0.814-0.593l-0.214-0.155c-0.487-0.365-0.966-0.73-1.446-1.104c-7.569-5.861-13.049-12.2-16.417-18.957   c16.679,16.864,46.049,29.913,86.09,37.92v5.041h28.156v9.096c-21.727-2.961-43.795-8.035-61.459-14.19l-3.948,11.332   c19.11,6.659,43.104,12.101,66.45,15.106c2.432,6.781,8.905,11.652,16.512,11.652h82.233c7.563,0,14.007-4.816,16.47-11.537   c66.313-8.223,111.127-29.219,126.381-58.146c3.215,7.314,4.844,14.801,4.844,22.367   C444.396,351.995,425.287,376.736,390.588,395.652z"
-                />
-
-                <path
-                  d="M255.586,354.154c21.793,0,39.522-17.729,39.522-39.522s-17.729-39.522-39.522-39.522s-39.523,17.729-39.523,39.522   S233.793,354.154,255.586,354.154z M255.586,287.109c15.176,0,27.522,12.347,27.522,27.522c0,15.177-12.347,27.522-27.522,27.522   c-15.176,0-27.523-12.346-27.523-27.522C228.063,299.456,240.41,287.109,255.586,287.109z"
-                />
-
-                <path
-                  d="M255.586,330.846c8.94,0,16.214-7.273,16.214-16.214s-7.273-16.214-16.214-16.214s-16.214,7.273-16.214,16.214   S246.646,330.846,255.586,330.846z M255.586,310.418c2.324,0,4.214,1.891,4.214,4.214s-1.89,4.214-4.214,4.214   c-2.324,0-4.214-1.891-4.214-4.214S253.262,310.418,255.586,310.418z"
-                />
-              </g>
-            </svg>
-            <h3 class="p-text-white fs-3 text-center">Site Currently Under Construction</h3>
-          </div>
-        </div>
-        <div id="links" class="d-flex justify-content-center pb-5">
-          <a id="github" class="thumbnail-link d-inline-flex align-items-center p-2 ms-1 mt-1 mx-2 p-bg-secondary" href="https://github.com/kemmojr" target="_blank">
-            <svg height="24" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true" class="">
-              <path
-                fill="#fff"
-                d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"
-              ></path>
-            </svg>
-          </a>
-          <a id="linkedin" class="thumbnail-link d-inline-flex align-items-center p-2 ms-1 mt-1 mx-2 p-bg-secondary" href="https://www.linkedin.com/in/tim-kemmis/" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="#fff" class="mercado-match" width="24" height="24" focusable="false">
-              <path
-                d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"
-              ></path>
-            </svg>
-          </a>
-          <a id="email" class="thumbnail-link d-inline-flex align-items-center p-2 ms-1 mt-1 mx-2 p-bg-secondary" href="javascript:copyEmailToClipboard()">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="#fff" role="img">
-              <path
-                d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"
-              />
-              <script xmlns="" />
-            </svg>
-          </a>
-        </div>
-      </header>
-      <div id="content" class="p-4">
-        <section class="align-self-center flex-grow-1 mb-5 pb-5">
-          <a class="anchor" id="about"></a>
-          <div class="container mb-5 pb-5">
-            <div class="row text-center mb-0">
-              <h3 class="p-text-white fs-3 col-12 px-3">About</h3>
-            </div>
-            <div class="row justify-content-center fade">
-              <p class="col-12 fs-4 mt-1">
-                I currently spend my time professionally in the world of full-stack web development. I love the variety and diversity of being able to work on new projects every day and I enjoy the challenge that each project brings.
-              </p>
-            </div>
-            <div class="row justify-content-center">
-              <p class="col-12 fs-4 mt-3 fade"> Fatherhood has presented a whole new set of challenges to overcome, from dealing with dirty nappies to trying to wrap my head around Complex SQL with limited sleep. </p>
-              <p class="col-12 fs-4 mt-3 fade"> As my wife puts it I also like to regularly torture myself by going on long runs and I appreciate the chance to spend hours listening to music that is older than me. </p>
-            </div>
-          </div>
-        </section>
-        <section class="w-100 pb-5 mt-5">
-          <a class="anchor" id="experience"></a>
-          <div class="container-lg container-fluid">
-            <div class="row text-center">
-              <h3 class="p-text-white fs-3 col-12 pb-2 px-3">Experience</h3>
-            </div>
-            <div class="row text-center mb-5">
-              <div class="row col-12 col-md-4">
-                <p class="fs-4 text-start text-md-end p-text-light-grey">Jul 2021 - Present</p>
-              </div>
-              <div class="row col-12 col-md-8 p-1 text-start">
-                <h3 class="p-text-white fs-4">Full-Stack Software Engineer</h3>
-                <p class="fs-4 m-0">GTICK Systems</p>
-              </div>
-              <div class="row col-12 text-center justify-content-start mt-3 fs-4">
-                <div class="col-md-4 row"></div>
-                <div class="col-12 col-md-8 flex-grow-1">
-                  <p class="text-start fade">
-                    Starting my career as a Software Engineer while still studying, I acquired skills on the job, often ahead of my coursework. Focused on revitalizing an established internal business management software, my efforts optimized daily
+                <div id="links" class="d-flex justify-content-center pb-5">
+                    <a
+                        id="github"
+                        class="thumbnail-link d-inline-flex align-items-center p-2 ms-1 mt-1 mx-2 p-bg-secondary"
+                        href="https://github.com/kemmojr"
+                        target="_blank"
+                    >
+                        <svg
+                            height="24"
+                            aria-hidden="true"
+                            viewBox="0 0 16 16"
+                            version="1.1"
+                            width="24"
+                            data-view-component="true"
+                            class=""
+                        >
+                            <path fill="#fff" d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path>
+                        </svg>
+                    </a>
+                    <a
+                        id="linkedin"
+                        class="thumbnail-link d-inline-flex align-items-center p-2 ms-1 mt-1 mx-2 p-bg-secondary"
+                        href="https://www.linkedin.com/in/tim-kemmis/"
+                        target="_blank"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            data-supported-dps="24x24"
+                            fill="#fff"
+                            class="mercado-match"
+                            width="24"
+                            height="24"
+                            focusable="false"
+                        >
+                            <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+                        </svg>
+                    </a>
+                    <a id="email" class="thumbnail-link d-inline-flex align-items-center p-2 ms-1 mt-1 mx-2 p-bg-secondary" href="javascript:copyEmailToClipboard()">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24px"
+                            height="24px"
+                            viewBox="0 0 24 24"
+                            fill="#fff"
+                            role="img"
+                        >
+                            <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/>
+                            <script xmlns=""/>
+                        </svg>
+                    </a>
+                </div>
+            </header>
+            <div id="content" class="p-4">
+                <section class="align-self-center flex-grow-1 mb-5 pb-5">
+                    <a class="anchor" id="about"></a>
+                    <div class="container mb-5 pb-5">
+                        <div class="row text-center mb-0">
+                            <h3 class="p-text-white fs-3 col-12 px-3">About</h3>
+                        </div>
+                        <div class="row justify-content-center fade">
+                            <p class="col-12 fs-4 mt-1">
+                                I currently spend my time professionally in the world of full-stack web development. I love the variety and diversity of being able to work on new projects every day and I enjoy the challenge that each project brings.
+                            </p>
+                        </div>
+                        <div class="row justify-content-center">
+                            <p class="col-12 fs-4 mt-3 fade"> Fatherhood has presented a whole new set of challenges to overcome, from dealing with dirty nappies to trying to wrap my head around Complex SQL with limited sleep.</p>
+                            <p class="col-12 fs-4 mt-3 fade"> As my wife puts it I also like to regularly torture myself by going on long runs and I appreciate the chance to spend hours listening to music that is older than me.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="w-100 pb-5 mt-5">
+                    <a class="anchor" id="experience"></a>
+                    <div class="container-lg container-fluid">
+                        <div class="row text-center">
+                            <h3 class="p-text-white fs-3 col-12 pb-2 px-3">Experience</h3>
+                        </div>
+                        <div class="row text-center mb-5">
+                            <div class="row col-12 col-md-4">
+                                <p class="fs-4 text-start text-md-end p-text-light-grey">Jul 2021 - Present</p>
+                            </div>
+                            <div class="row col-12 col-md-8 p-1 text-start">
+                                <h3 class="p-text-white fs-4">Full-Stack Software Engineer</h3>
+                                <p class="fs-4 m-0">GTICK Systems</p>
+                            </div>
+                            <div class="row col-12 text-center justify-content-start mt-3 fs-4">
+                                <div class="col-md-4 row"></div>
+                                <div class="col-12 col-md-8 flex-grow-1">
+                                    <p class="text-start fade">
+                                        Starting my career as a Software Engineer while still studying, I acquired skills on the job, often ahead of my coursework. Focused on revitalizing an established internal business management software, my efforts optimized daily
                     operations, enhanced employee productivity, and facilitated intricate data management.
-                  </p>
-                  <p class="text-start fade">
-                    Within this web application, my contributions constitute 50% authorship of an eight-year-old project, encompassing 7,500 personal file changes. Moreover, I modernized the entire API layer and devised a more dynamic frontend,
+                                    </p>
+                                    <p class="text-start fade">
+                                        Within this web application, my contributions constitute 50% authorship of an eight-year-old project, encompassing 7,500 personal file changes. Moreover, I modernized the entire API layer and devised a more dynamic frontend,
                     significantly expediting our development processes.
-                  </p>
-                  <p class="text-start fade">
-                    As part of a six-person engineering team, I contributed to a multi-million-dollar software integral across the mining pipeline. I personally designed operational pages, created essential data visualizations, and developed an
+                                    </p>
+                                    <p class="text-start fade">
+                                        As part of a six-person engineering team, I contributed to a multi-million-dollar software integral across the mining pipeline. I personally designed operational pages, created essential data visualizations, and developed an
                     large-scale database API integrator.
-                  </p>
-                  <div class="col-12 container">
-                    <div class="text-center justify-content-start">
-                      <h5 class="px-2 m-2 skill rounded-pill text-center d-inline-flex p-text-white">SQL</h5>
-                      <h5 class="px-2 m-2 skill rounded-pill text-center d-inline-flex p-text-white">C#</h5>
-                      <h5 class="px-2 m-2 skill rounded-pill text-center d-inline-flex p-text-white">JavaScript</h5>
-                      <h5 class="px-2 m-2 skill rounded-pill text-center d-inline-flex p-text-white">C# Web API</h5>
-                      <h5 class="px-2 m-2 skill rounded-pill text-center d-inline-flex p-text-white">JSON</h5>
+                                    </p>
+                                    <div class="col-12 container">
+                                        <div class="text-center justify-content-start">
+                                            <h5 class="px-2 m-2 skill rounded-pill text-center d-inline-flex p-text-white">SQL</h5>
+                                            <h5 class="px-2 m-2 skill rounded-pill text-center d-inline-flex p-text-white">C#</h5>
+                                            <h5 class="px-2 m-2 skill rounded-pill text-center d-inline-flex p-text-white">JavaScript</h5>
+                                            <h5 class="px-2 m-2 skill rounded-pill text-center d-inline-flex p-text-white">C# Web API</h5>
+                                            <h5 class="px-2 m-2 skill rounded-pill text-center d-inline-flex p-text-white">JSON</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row text-center mb-5 fade">
+                            <div class="row col-12 col-md-4">
+                                <p class="fs-4 text-start text-md-end p-text-light-grey">Jan 2021</p>
+                            </div>
+                            <div class="row col-12 col-md-8 p-1 text-start">
+                                <h3 class="p-text-white fs-4">Software Engineer Experience</h3>
+                                <p class="fs-4 m-0">St. Phillips Christian College</p>
+                                <p class="fs-4">Work Experience</p>
+                            </div>
+                            <div class="row col-12 text-center justify-content-start fs-4">
+                                <div class="col-md-4 row"></div>
+                                <div class="col-12 col-md-8 flex-grow-1">
+                                    <p class="text-start"> During my time doing work experience I worked with a Senior Engineer to implement a React + PHP + MySql application to serve as a admin dashboard for booking rooms and resources at their multiple campuses</p>
+                                    <div class="col-12 container">
+                                        <div class="text-center justify-content-start">
+                                            <h5 class="px-2 m-2 skill rounded-pill text-center d-inline-flex p-text-white">React</h5>
+                                            <h5 class="px-2 m-2 skill rounded-pill text-center d-inline-flex p-text-white">PHP</h5>
+                                            <h5 class="px-2 m-2 skill rounded-pill text-center d-inline-flex p-text-white">SQL</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row text-center mb-5 fade">
-              <div class="row col-12 col-md-4">
-                <p class="fs-4 text-start text-md-end p-text-light-grey">Jan 2021</p>
-              </div>
-              <div class="row col-12 col-md-8 p-1 text-start">
-                <h3 class="p-text-white fs-4">Software Engineer Experience</h3>
-                <p class="fs-4 m-0">St. Phillips Christian College</p>
-                <p class="fs-4">Work Experience</p>
-              </div>
-              <div class="row col-12 text-center justify-content-start fs-4">
-                <div class="col-md-4 row"></div>
-                <div class="col-12 col-md-8 flex-grow-1">
-                  <p class="text-start"> During my time doing work experience I worked with a Senior Engineer to implement a React + PHP + MySql application to serve as a admin dashboard for booking rooms and resources at their multiple campuses </p>
-                  <div class="col-12 container">
-                    <div class="text-center justify-content-start">
-                      <h5 class="px-2 m-2 skill rounded-pill text-center d-inline-flex p-text-white">React</h5>
-                      <h5 class="px-2 m-2 skill rounded-pill text-center d-inline-flex p-text-white">PHP</h5>
-                      <h5 class="px-2 m-2 skill rounded-pill text-center d-inline-flex p-text-white">SQL</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="bubble pb-5 mt-5 align-self-center w-100">
-          <a class="anchor" id="projects"></a>
-          <div class="container-lg container-fluid">
-            <div class="row text-center">
-              <span class="line"></span>
-              <h3 class="p-text-white fs-3 col-12 pb-2 px-3">Projects</h3>
-            </div>
-            <div class="row text-center mb-5">
-              <div class="row col-12 col-sm-5 p-1">
-                <h3 class="p-text-white fs-4">Dad Joke Generator</h3>
-                <p class="fs-4 p-text-light-grey">Dec 2023</p>
-              </div>
-              <div class="d-flex justify-content-center justify-content-md-start col-12 col-sm-5 p-1">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" id="showMeTheDadJokes" class="inline-block project-link" data-bs-toggle="modal" data-bs-target="#dadJokeModal" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path>
-                </svg>
-              </div>
-              <div class="row col-12 text-center justify-content-start fs-4">
-                <div class="col-8 col-md-4 row order-2 order-md-1 justify-content-center fade">
-                  <div class="container">
-                    <h2 class="fs-2 p-text-white">Loading Dad Joke...</h2>
-                    <div class="row cols-9 border border-5 border-white rounded-3">
-                      <div class="loading-bar-cell col-1 my-3 ms-3 me-1 d-none d-md-block d-lg-none d-xxl-block"></div>
-                      <div class="loading-bar-cell col-1 my-3 mx-1 d-none d-sm-block d-lg-none d-xl-block"></div>
-                      <div class="loading-bar-cell col-1 my-3 mx-1 d-block d-lg-none d-xl-block"></div>
-                      <div class="loading-bar-cell col-1 my-3 ms-1 me-2"></div>
-                    </div>
-                  </div>
-                </div>
-                <p class="col-8 text-start flex-grow-1 order-1 order-md-2 fade"
-                  >This was a fun weekend project to make an app in multiple different ways. simply press the button and it spits out a dad joke. It gets the jokes from the from the icanhazdadjoke.com API. I made versions in in ASP.Net 7 MVC, Python
+                </section>
+                <section class="bubble pb-5 mt-5 align-self-center w-100">
+                    <a class="anchor" id="projects"></a>
+                    <div class="container-lg container-fluid">
+                        <div class="row text-center">
+                            <span class="line"></span>
+                            <h3 class="p-text-white fs-3 col-12 pb-2 px-3">Projects</h3>
+                        </div>
+                        <div class="row text-center mb-5">
+                            <div class="row col-12 col-sm-5 p-1">
+                                <h3 class="p-text-white fs-4">Dad Joke Generator</h3>
+                                <p class="fs-4 p-text-light-grey">Dec 2023</p>
+                            </div>
+                            <div class="d-flex justify-content-center justify-content-md-start col-12 col-sm-5 p-1">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                    id="showMeTheDadJokes"
+                                    class="inline-block project-link"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#dadJokeModal"
+                                    aria-hidden="true"
+                                >
+                                    <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <div class="row col-12 text-center justify-content-start fs-4">
+                                <div class="col-8 col-md-4 row order-2 order-md-1 justify-content-center fade">
+                                    <div class="container">
+                                        <h2 class="fs-2 p-text-white">Loading Dad Joke...</h2>
+                                        <div class="row cols-9 border border-5 border-white rounded-3">
+                                            <div class="loading-bar-cell col-1 my-3 ms-3 me-1 d-none d-md-block d-lg-none d-xxl-block"></div>
+                                            <div class="loading-bar-cell col-1 my-3 mx-1 d-none d-sm-block d-lg-none d-xl-block"></div>
+                                            <div class="loading-bar-cell col-1 my-3 mx-1 d-block d-lg-none d-xl-block"></div>
+                                            <div class="loading-bar-cell col-1 my-3 ms-1 me-2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="col-8 text-start flex-grow-1 order-1 order-md-2 fade">
+                                    This was a fun weekend project to make an app in multiple different ways. simply press the button and it spits out a dad joke. It gets the jokes from the from the icanhazdadjoke.com API. I made versions in in ASP.Net 7 MVC, Python
                   and frontend JavaScipt
-                </p>
-              </div>
-              <div class="col-12 col-sm-6 col-md-6 container mt-4 mb-5 pb-5 fade">
-                <div class="text-center justify-content-start">
-                  <h5 class="px-2 m-2 skill rounded-pill text-center d-inline-flex p-text-white">JSON</h5>
-                  <h5 class="px-2 m-2 skill rounded-pill text-center d-inline-flex p-text-white">JavaScript</h5>
-                  <h5 class="px-2 m-2 skill rounded-pill text-center d-inline-flex p-text-white">ASP.Net Web API</h5>
-                  <h5 class="px-2 m-2 skill rounded-pill text-center d-inline-flex p-text-white">REST API</h5>
-                  <h5 class="px-2 m-2 skill rounded-pill text-center d-inline-flex p-text-white">Python</h5>
-                </div>
-              </div>
-            </div>
-            <div class="row text-center mb-5">
-              <div class="row col-12 col-sm-5 p-1">
-                <h3 class="p-text-white fs-4">Flash platformer</h3>
-                <p class="fs-4 p-text-light-grey">Jun 2015</p>
-              </div>
-              <div class="row col-12 text-center justify-content-start fs-4">
-                <div class="col-8 col-md-4 row order-2 order-md-1 fade">
-                  <img class="project-img align-self-top" alt="First flash project" src="./images/flash.png" />
-                </div>
-                <p class="col-8 text-start flex-grow-1 order-1 order-md-2 fade">
-                  My first real foray into programming. I set out to make a 2d platformer in adobe flash starting from scratch. I soon realised what a difficult problem this was, my ambitions got ahead of me. But through the process of coding my own
+                                </p>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 container mt-4 mb-5 pb-5 fade">
+                                <div class="text-center justify-content-start">
+                                    <h5 class="px-2 m-2 skill rounded-pill text-center d-inline-flex p-text-white">JSON</h5>
+                                    <h5 class="px-2 m-2 skill rounded-pill text-center d-inline-flex p-text-white">JavaScript</h5>
+                                    <h5 class="px-2 m-2 skill rounded-pill text-center d-inline-flex p-text-white">ASP.Net Web API</h5>
+                                    <h5 class="px-2 m-2 skill rounded-pill text-center d-inline-flex p-text-white">REST API</h5>
+                                    <h5 class="px-2 m-2 skill rounded-pill text-center d-inline-flex p-text-white">Python</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row text-center mb-5">
+                            <div class="row col-12 col-sm-5 p-1">
+                                <h3 class="p-text-white fs-4">Flash platformer</h3>
+                                <p class="fs-4 p-text-light-grey">Jun 2015</p>
+                            </div>
+                            <div class="row col-12 text-center justify-content-start fs-4">
+                                <div class="col-8 col-md-4 row order-2 order-md-1 fade">
+                                    <img class="project-img align-self-top" alt="First flash project" src="./images/flash.png">
+                                </div>
+                                <p class="col-8 text-start flex-grow-1 order-1 order-md-2 fade">
+                                    My first real foray into programming. I set out to make a 2d platformer in adobe flash starting from scratch. I soon realised what a difficult problem this was, my ambitions got ahead of me. But through the process of coding my own
                   hitbox collision system I discovered the joy of programming. I was hooked
-                </p>
-              </div>
-              <div class="col-12 col-sm-6 col-md-6 container mt-4 mb-5 pb-5 fade">
-                <div class="text-center justify-content-start">
-                  <h5 class="px-2 m-2 skill rounded-pill text-center d-inline-flex p-text-white">Problem solving</h5>
-                  <h5 class="px-2 m-2 skill rounded-pill text-center d-inline-flex p-text-white">OOP</h5>
+                                </p>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 container mt-4 mb-5 pb-5 fade">
+                                <div class="text-center justify-content-start">
+                                    <h5 class="px-2 m-2 skill rounded-pill text-center d-inline-flex p-text-white">Problem solving</h5>
+                                    <h5 class="px-2 m-2 skill rounded-pill text-center d-inline-flex p-text-white">OOP</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="fixed-bottom d-flex justify-content-end m-3">
+                    <div class="accordion custom-accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button
+                                    class="accordion-button p-2"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne"
+                                    aria-expanded="true"
+                                    aria-controls="collapseOne"
+                                ></button>
+                            </h2>
+                            <div
+                                id="collapseOne"
+                                class="accordion-collapse collapse show"
+                                aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample"
+                            ></div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </section>
-        <div class="fixed-bottom d-flex justify-content-end m-3">
-          <div class="accordion custom-accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"></button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample"> </div>
+            <dialog id="dadJokeGenerator" class="dad-joke-modal w-75">
+                <form method="dialog" class="d-flex justify-content-end">
+                    <button class="btn-close" type="close"></button>
+                </form>
+            </dialog>
+            <div
+                class="modal fade"
+                id="dadJokeModal"
+                tabindex="-1"
+                aria-labelledby="dadJokeModalLabel"
+                aria-hidden="true"
+            >
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5 text-black" id="dadJokeModalLabel">Dad Joke Generator</h1>
+                            <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                            ></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="text-center">
+                                <h1 class="display-4 text-black">Hello There</h1>
+                                <p class="text-black">Would you care for a dad joke?</p>
+                                <button type="button" id="getDadJoke">*Groan*</button>
+                                <div>
+                                    <p class="text-black" id="currentDadJoke"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-center">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      <dialog id="dadJokeGenerator" class="dad-joke-modal w-75">
-        <form method="dialog" class="d-flex justify-content-end">
-          <button class="btn-close" type="close"></button>
-        </form>
-      </dialog>
-      <div class="modal fade" id="dadJokeModal" tabindex="-1" aria-labelledby="dadJokeModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5 text-black" id="dadJokeModalLabel">Dad Joke Generator</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <div class="text-center">
-                <h1 class="display-4 text-black">Hello There</h1>
-                <p class="text-black">Would you care for a dad joke?</p>
-                <button type="button" id="getDadJoke">*Groan*</button>
-                <div><p class="text-black" id="currentDadJoke"></p></div>
-              </div>
-            </div>
-            <div class="modal-footer justify-content-center">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+    </body>
 </html>
