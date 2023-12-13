@@ -123,3 +123,7 @@ a.anchor {
 .fade-out {
   opacity: 0;
 }
+
+.fade {
+transition: opacity .3s ease-out !important;
+}
