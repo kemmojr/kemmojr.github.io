@@ -28,6 +28,19 @@ body {
   }
 }
 
+/* .thumbnail-link svg:hover {
+  fill: var(--secondary-color);
+} */
+
+.thumbnail-link:hover {
+  background-color: #fff;
+
+  svg {
+  fill: var(--secondary-color);
+
+  }
+}
+
 #links-offcanvas {
   @media (min-width: 992px) {
     display: none !important;
@@ -134,8 +147,8 @@ transition: opacity .3s ease-out !important;
 
 
 body {
-  --sb-track-color: #232E33;
-  --sb-thumb-color: #6BAF8D;
+  --sb-track-color: #222222;
+  --sb-thumb-color: #c5d6ef;
   --sb-size: 10px;
 
   scrollbar-color: var(--sb-thumb-color) 
