@@ -1,10 +1,20 @@
 @import url(Palette.css);
+@font-face {
+  font-family: "custom-font";
+  src: url("../fonts/Starjedi.ttf");
+}
+
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: #fff;
   max-width: 99vw;
   scroll-behavior: smooth;
   background-color: black;
+}
+
+h1 {
+  font-family: "custom-font";
+  font-weight: normal;
 }
 
 canvas {
@@ -22,7 +32,6 @@ canvas {
 #nameTitle {
   font-size: xx-large;
   font-size: 3rem !important;
-  font-weight: bold;
 }
 
 #header {
@@ -45,8 +54,7 @@ canvas {
   background-color: #fff;
 
   svg {
-  fill: var(--secondary-color);
-
+    fill: var(--secondary-color);
   }
 }
 
@@ -149,23 +157,21 @@ a.anchor {
 }
 
 .fade {
-transition: opacity .3s ease-out !important;
+  transition: opacity 0.3s ease-out !important;
 }
 
 /* scroll bar */
-
 
 body {
   --sb-track-color: #222222;
   --sb-thumb-color: #c5d6ef;
   --sb-size: 10px;
 
-  scrollbar-color: var(--sb-thumb-color) 
-                   var(--sb-track-color);
+  scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
 }
 
 body::-webkit-scrollbar {
-  width: var(--sb-size) 
+  width: var(--sb-size);
 }
 
 body::-webkit-scrollbar-track {
@@ -176,6 +182,4 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background: var(--sb-thumb-color);
   border-radius: 10px;
-  
-  }
-        
+}
