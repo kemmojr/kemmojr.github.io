@@ -37,6 +37,19 @@ canvas {
   }
 }
 
+/* .thumbnail-link svg:hover {
+  fill: var(--secondary-color);
+} */
+
+.thumbnail-link:hover {
+  background-color: #fff;
+
+  svg {
+  fill: var(--secondary-color);
+
+  }
+}
+
 #links-offcanvas {
   @media (min-width: 992px) {
     display: none !important;
@@ -129,6 +142,40 @@ a.anchor {
   transition: opacity 0.5s ease-out;
 }
 
+/* fade  */
+
 .fade-out {
   opacity: 0;
 }
+
+.fade {
+transition: opacity .3s ease-out !important;
+}
+
+/* scroll bar */
+
+
+body {
+  --sb-track-color: #222222;
+  --sb-thumb-color: #c5d6ef;
+  --sb-size: 10px;
+
+  scrollbar-color: var(--sb-thumb-color) 
+                   var(--sb-track-color);
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size) 
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 10px;
+  
+  }
+        
