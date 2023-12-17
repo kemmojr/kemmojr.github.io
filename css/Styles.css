@@ -1,6 +1,6 @@
 @import url(Palette.css);
 @font-face {
-  font-family: "custom-font";
+  font-family: "star-jedi";
   src: url("../fonts/Starjedi.ttf");
 }
 
@@ -11,8 +11,10 @@ body {
   scroll-behavior: smooth;
 }
 
-h1 {
-  font-family: "custom-font";
+h1,
+h2,
+h3 {
+  font-family: "star-jedi";
   font-weight: normal;
   font-style: normal;
 }
