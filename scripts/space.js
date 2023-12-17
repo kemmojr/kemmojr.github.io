@@ -14,7 +14,7 @@ function generateSpace() {
     const size = Math.random() * 2 + 1; // Vary star size
     ctx.beginPath();
     ctx.arc(x, y, size, 0, 2 * Math.PI);
-    ctx.fillStyle = "white";
+    ctx.fillStyle = "#a5a5a5";
     ctx.fill();
   }
 }
