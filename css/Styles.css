@@ -117,10 +117,15 @@ nav {
   }
 }
 
-#header,
+#header {
+  @media (min-width: 992px) {
+    max-width: 25vw;
+  }
+}
+
 #content {
   @media (min-width: 992px) {
-    max-width: 50vw;
+    max-width: 75vw;
   }
 }
 
