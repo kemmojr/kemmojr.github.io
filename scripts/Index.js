@@ -7,6 +7,7 @@ const observerOptions = {
 };
 
 function loadListeners() {
+  generateSpace();
   document.querySelectorAll(".nav-link ").forEach(link => {
     link.addEventListener("click", () => {
       setTimeout(() => {

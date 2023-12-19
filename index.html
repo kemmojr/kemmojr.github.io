@@ -6,8 +6,9 @@
         <title>Timothy Kemmis</title>
         <link rel="icon" href="./images/favicon.svg">
     </head>
-    <body class="min-vh-100 vw-100 vh-100 p-bg-primary overflow-y-scroll" onload="loadListeners()">
+    <body class="min-vh-100 vw-100 vh-100 overflow-y-scroll" onload="loadListeners()">
         <script src="./scripts/Index.js"></script>
+        <script src="./scripts/space.js"></script>
         <script src="./scripts/dad-joke-generator.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
         <link
@@ -18,7 +19,8 @@
         >
         <link href="./css/Styles.css" rel="stylesheet">
         <link href="./css/Palette.css" rel="stylesheet">
-        <div class="d-flex flex-column flex-lg-row">
+        <canvas id="space"></canvas>
+        <div id="parent" class="d-flex flex-column flex-lg-row">
             <header id="header" class="position-sticky top-0 d-flex flex-column ps-5 pe-2 py-5 justify-content-between">
                 <div class="px-lg-1 pt-3 mx-lg-1 align-self-lg-center container d-lg-flex justify-content-lg-center flex-lg-column align-items-lg-center">
                     <div class="row justify-content-start">
@@ -27,7 +29,7 @@
                         <p class="fs-4 col-10 col-lg-9 col-lg-12 col-xl-12 col-xxl-12"></p>
                         <h4 class="p-text-white text-start m-0 col-12 fs-4"> Hello There.</h4>
                         <p class="col-12 fs-4 mb-5"> I'm Tim. I've been building reliable and dependable systems for industry for the last two years.</p>
-                        <nav class="navbar navbar-dark p-bg-primary fixed-top navbar-expand-lg d-lg-block">
+                        <nav class="navbar navbar-dark fixed-top navbar-expand-lg d-lg-block">
                             <div class="container-fluid">
                                 <button
                                     class="navbar-toggler"
@@ -166,7 +168,7 @@
                                 <path d="M255.586,330.846c8.94,0,16.214-7.273,16.214-16.214s-7.273-16.214-16.214-16.214s-16.214,7.273-16.214,16.214   S246.646,330.846,255.586,330.846z M255.586,310.418c2.324,0,4.214,1.891,4.214,4.214s-1.89,4.214-4.214,4.214   c-2.324,0-4.214-1.891-4.214-4.214S253.262,310.418,255.586,310.418z"/>
                             </g>
                         </svg>
-                        <h3 class="p-text-white fs-3 text-center">Site Currently under Construction</h3>
+                        <h3 class="p-text-white fs-3 text-center">Site Currently Under Construction</h3>
                     </div>
                 </div>
                 <div id="links" class="d-flex justify-content-center pb-5">
@@ -184,9 +186,8 @@
                             width="24"
                             data-view-component="true"
                             class=""
-                            fill="#fff"
                         >
-                            <path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path>
+                            <path fill="#fff" d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path>
                         </svg>
                     </a>
                     <a
@@ -252,7 +253,7 @@
                                 <p class="fs-4 text-start text-md-end p-text-light-grey">Jul 2021 - Present</p>
                             </div>
                             <div class="row col-12 col-md-8 p-1 text-start">
-                                <h3 class="p-text-white fs-4">Full-Stack Software Engineer</h3>
+                                <h4 class="p-text-white fs-4">Full-Stack Software Engineer</h4>
                                 <p class="fs-4 m-0">GTICK Systems</p>
                             </div>
                             <div class="row col-12 text-center justify-content-start mt-3 fs-4">
@@ -287,7 +288,7 @@
                                 <p class="fs-4 text-start text-md-end p-text-light-grey">Jan 2021</p>
                             </div>
                             <div class="row col-12 col-md-8 p-1 text-start">
-                                <h3 class="p-text-white fs-4">Software Engineer Experience</h3>
+                                <h4 class="p-text-white fs-4">Software Engineer Experience</h4>
                                 <p class="fs-4 m-0">St. Phillips Christian College</p>
                                 <p class="fs-4">Work Experience</p>
                             </div>
@@ -319,7 +320,7 @@
                                 <p class="fs-4 text-start text-md-end p-text-light-grey">Dec 2023</p>
                             </div>
                             <div class="row col-12 col-md-8 p-1 text-start">
-                                <h3 class="p-text-white fs-4">
+                                <h4 class="p-text-white fs-4">
                                     Dad Joke Generator
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -333,13 +334,13 @@
                                     >
                                         <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path>
                                     </svg>
-                                </h3>
+                                </h4>
                             </div>
                         </div>
                         <div class="row col-12 text-center justify-content-start fs-4">
                             <div class="col-8 col-md-4 row order-2 order-md-1 justify-content-center fade">
                                 <div class="container">
-                                    <h2 class="fs-2 p-text-white">Loading Dad Joke...</h2>
+                                    <h4 class="fs-2 p-text-white">Loading Dad Joke...</h4>
                                     <div class="d-flex p-1 border border-5 border-white rounded-3">
                                         <div class="loading-bar-cell flex-grow-1 m-1"></div>
                                         <div class="loading-bar-cell flex-grow-1 m-1"></div>
@@ -373,7 +374,7 @@
                             <p class="fs-4 text-start text-md-end p-text-light-grey">Jun 2015</p>
                         </div>
                         <div class="row col-12 col-md-8 p-1 text-start">
-                            <h3 class="p-text-white fs-4">Flash platformer</h3>
+                            <h4 class="p-text-white fs-4">Flash platformer</h4>
                         </div>
                         <div class="row col-12 text-center justify-content-start fs-4">
                             <div class="col-8 col-md-4 row order-2 order-md-1 fade">
