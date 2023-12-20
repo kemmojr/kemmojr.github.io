@@ -155,8 +155,10 @@ a.anchor {
 }
 
 .skill {
-  border: 2.5px dashed white;
+  border: 2.5px solid hsl(118, 85%, 24%);
   border-radius: var(--bs-border-radius-3);
+  background-color: hsl(118, 85%, 24%);
+  color: hsl(118.22deg 70.12% 73%);
 }
 
 .custom-accordion {
@@ -195,4 +197,13 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background: var(--sb-thumb-color);
   border-radius: 10px;
+}
+
+/* Or use transform to scale */
+.svg-container svg {
+  transform: scale(1.6); /* Scale the SVG by a factor of 2 */
+}
+
+#titleContainer {
+  top: 60px;
 }
