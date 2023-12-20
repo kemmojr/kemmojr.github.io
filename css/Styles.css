@@ -158,7 +158,9 @@ a.anchor {
   border: 2.5px solid hsl(118, 85%, 24%);
   border-radius: var(--bs-border-radius-3);
   background-color: hsl(118, 85%, 24%);
-  color: hsl(118.22deg 70.12% 73%);
+  color: hsl(118.22deg 70.12% 90%);
+  font-size: 10pt;
+  padding: 13px;
 }
 
 .custom-accordion {
