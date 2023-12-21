@@ -1,5 +1,6 @@
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
+const blurbFS = 6;
 const experience = [
   {
     startDate: new Date("2021-07-01"),
@@ -67,33 +68,6 @@ const projects = [
     skills: ["ActionScript", "OOP"]
   }
 ];
-
-const original = `
-    
-    
-<div class="row text-center mb-5">
-<div class="row col-12 col-md-4">
-    <p class="fs-4 text-start text-md-end p-text-light-grey">Jun 2015</p>
-</div>
-<div class="row col-12 col-md-8 p-1 text-start">
-    <h4 class="p-text-white fs-4">Flash platformer</h4>
-</div>
-<div class="row col-12 text-center justify-content-start fs-4">
-    <div class="col-8 col-md-4 row order-2 order-md-1 fade show">
-    <img class="project-img align-self-top" alt="First flash project" src="./images/flash.png" />
-    </div>
-    <p class="col-8 text-start flex-grow-1 order-1 order-md-2 fade show">
-    My first real foray into programming. I set out to make a 2d platformer in adobe flash starting from scratch. I soon realised what a difficult problem this was, my ambitions got ahead of me. But through the process of coding my own
-    hitbox collision system I discovered the joy of programming. I was hooked
-    </p>
-</div>
-<div class="col-12 col-sm-6 col-md-6 container mt-4 mb-5 pb-5 fade show">
-    <div class="text-center justify-content-start">
-    <h5 class="m-2 skill rounded-pill text-center d-inline-flex">Problem solving</h5>
-    <h5 class="m-2 skill rounded-pill text-center d-inline-flex">OOP</h5>
-    </div>
-</div>
-`;
 
 function getDateFormatted(date) {
   if (!date) return "Present";
