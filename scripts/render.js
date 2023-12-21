@@ -32,6 +32,7 @@ const projects = [
     endDate: new Date("2023-12-01"),
     name: "Dad Joke Generator",
     link: "#dadJokeModal",
+    hasImage: false,
     image: `
         <div class="container">
             <h4 class="fs-2 p-text-white">Loading Dad Joke...</h4>
@@ -58,7 +59,8 @@ const projects = [
     endDate: new Date("2023-12-01"),
     name: "Flash platformer",
     link: "",
-    image: `../images/flash.png`,
+    image: `./images/flash.png`,
+    hasImage: true,
     blurb: [
       `My first real foray into programming. I set out to make a 2d platformer in adobe flash starting from scratch. I soon realised what a difficult problem this was, my ambitions got ahead of me. But through the process of coding my own hitbox collision system I discovered the joy of programming. I was hooked`
     ],
@@ -195,6 +197,10 @@ function renderProjects() {
     `;
 
   for (let project of projects) {
+    const img = new Image();
+    img.alt = project.name;
+    img.src = project.image;
+    img.classList.add("project-img");
     const projectHTML = `
             <div class="row text-center mb-4">
                 <div class="row col-12 col-md-4">
@@ -214,7 +220,13 @@ function renderProjects() {
             </div>
             <div class="row col-12 text-center justify-content-start fs-4">
                 <div class="col-8 col-md-4 row order-2 order-md-1 justify-content-center fade show">
-                    ${project.imageLink ? `<img alt="${project.name}" src="${project.imageLink}" />` : project.image}
+                    <div class="container">
+                        <div class="row justify-content-end ">
+                            <div class="col-8">
+                                ${project.hasImage ? `${img.outerHTML}` : project.image}
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 ${project.blurb.map(blurb => `<p class="col-8 text-start flex-grow-1 order-1 order-md-2 fade show">${blurb}</p>`).join()}
             </div>

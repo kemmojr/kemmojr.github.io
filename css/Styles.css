@@ -151,7 +151,8 @@ a.anchor {
 }
 
 .project-img {
-  height: max-content;
+  height: auto;
+  width: 100%;
 }
 
 .skill {
