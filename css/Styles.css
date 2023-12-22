@@ -151,10 +151,15 @@ a.anchor {
   transition: transform 0.3s ease-out, background-color 0.3s ease-out, opacity 0.3s ease-out;
 }
 
+.experience,
 .project {
   background-color: var(--primary-color);
   opacity: 1;
   border-radius: 1rem;
+  border: 2px solid transparent;
+}
+
+.project {
   cursor: pointer;
 }
 
@@ -165,8 +170,10 @@ a.anchor {
   opacity: 0.8;
 } */
 
+.experience:hover,
 .project:hover {
-  background-color: #0c0c0c !important;
+  background-color: hsl(0, 0%, 4%) !important;
+  border: 2px solid var(--white-color);
   opacity: 0.95 !important;
   .project-link {
     transform: translate(4px, -4px);

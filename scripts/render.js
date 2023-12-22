@@ -59,7 +59,7 @@ const projects = [
     startDate: new Date("2023-12-01"),
     endDate: new Date("2023-12-01"),
     name: "Flash platformer",
-    link: "",
+    link: "#missingModal",
     image: `./images/flash.png`,
     hasImage: true,
     blurb: [
@@ -133,7 +133,8 @@ function renderExperience() {
 
   for (let record of experience) {
     const experienceRecord = `
-            <div class="row text-center mb-5">
+          <div class="experience mb-5 mt-3">
+            <div class="row text-center mb-4 mt-3">
               <div class="row col-12 col-md-4">
                   <p class=" text-start text-md-end p-text-light-grey">${getDateFormatted(record.startDate)}
                   ${record.startDate >= record.endDate && record.startDate <= record.endDate ? "" : ` - ${getDateFormatted(record.endDate)}`}
@@ -154,7 +155,9 @@ function renderExperience() {
                     </div>
                   </div>
               </div>
-            </div>`;
+            </div>
+          </div>
+            `;
 
     experienceContent += experienceRecord;
   }
@@ -176,8 +179,8 @@ function renderProjects() {
     img.src = project.image;
     img.classList.add("project-img");
     const projectHTML = `
-          <div class="project" data-bs-toggle="modal" data-bs-target="${project.link}">
-            <div class="row text-center mb-4">
+          <div class="project mb-5 mt-3" data-bs-toggle="modal" data-bs-target="${project.link}">
+            <div class="row text-center mb-4 mt-3">
                 <div class="row col-12 col-md-4">
                 <p class=" text-start text-md-end p-text-light-grey">
                 ${getDateFormatted(project.startDate)}
@@ -205,7 +208,7 @@ function renderProjects() {
                 </div>
                 ${project.blurb.map(blurb => `<p class="col-8 text-start flex-grow-1 order-1 order-md-2 fade show">${blurb}</p>`).join()}
             </div>
-            <div class="col-12 col-sm-6 col-md-6 container mt-4 mb-5 pb-5 fade show">
+            <div class="col-12 col-sm-6 col-md-6 container mt-4 pb-2 fade show">
                 <div class="text-center justify-content-start">
                     ${project.skills.map(skill => `<h5 class="m-2 skill rounded-pill text-center d-inline-flex">${skill}</h5>`).join()}
                 </div>
