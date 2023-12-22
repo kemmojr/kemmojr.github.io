@@ -36,7 +36,7 @@ const projects = [
     hasImage: false,
     image: `
         <div class="container">
-            <h4 class="fs-2 p-text-white">Loading Dad Joke...</h4>
+            <h4 class="fs-4 p-text-white">Loading Dad Joke...</h4>
             <div class="d-flex p-1 border border-5 border-white rounded-3">
                 <div class="loading-bar-cell flex-grow-1 m-1"></div>
                 <div class="loading-bar-cell flex-grow-1 m-1"></div>
@@ -112,13 +112,13 @@ function renderAbout() {
       <h3 class="p-text-white fs-3 col-12 px-3">About</h3>
     </div>
     <div class="row justify-content-center fade show">
-      <p class="col-12 fs-4 mt-1">
+      <p class="col-12  mt-1">
         I currently spend my time professionally in the world of full-stack web development. I love the variety and diversity of being able to work on new projects every day and I enjoy the challenge that each project brings.
       </p>
     </div>
     <div class="row justify-content-center">
-      <p class="col-12 fs-4 mt-3 fade show"> Fatherhood has presented a whole new set of challenges to overcome, from dealing with dirty nappies to trying to wrap my head around Complex SQL with limited sleep.</p>
-      <p class="col-12 fs-4 mt-3 fade show"> As my wife puts it I also like to regularly torture myself by going on long runs and I appreciate the chance to spend hours listening to music that is older than me.</p>
+      <p class="col-12  mt-3 fade show"> Fatherhood has presented a whole new set of challenges to overcome, from dealing with dirty nappies to trying to wrap my head around Complex SQL with limited sleep.</p>
+      <p class="col-12  mt-3 fade show"> As my wife puts it I also like to regularly torture myself by going on long runs and I appreciate the chance to spend hours listening to music that is older than me.</p>
     </div>
   `;
 
@@ -135,15 +135,15 @@ function renderExperience() {
     const experienceRecord = `
             <div class="row text-center mb-5">
               <div class="row col-12 col-md-4">
-                  <p class="fs-4 text-start text-md-end p-text-light-grey">${getDateFormatted(record.startDate)}
+                  <p class=" text-start text-md-end p-text-light-grey">${getDateFormatted(record.startDate)}
                   ${record.startDate >= record.endDate && record.startDate <= record.endDate ? "" : ` - ${getDateFormatted(record.endDate)}`}
                   </p>
               </div>
               <div class="row col-12 col-md-8 p-1 text-start">
-                  <h4 class="p-text-white fs-4">${record.position}</h4>
-                  <p class="fs-4 m-0">${record.company}</p>
+                  <h5 class="p-text-white ">${record.position}</h5>
+                  <p class=" m-0">${record.company}</p>
               </div>
-              <div class="row col-12 text-center justify-content-start mt-3 fs-4">
+              <div class="row col-12 text-center justify-content-start mt-3 ">
               <div class="col-md-4 row"></div>
               <div class="col-12 col-md-8 flex-grow-1">
               ${record.blurb.map(pText => `<p class="text-start fade show">${pText}</p>`).join()}                    
@@ -176,23 +176,24 @@ function renderProjects() {
     img.src = project.image;
     img.classList.add("project-img");
     const projectHTML = `
+          <div class="project" data-bs-toggle="modal" data-bs-target="${project.link}">
             <div class="row text-center mb-4">
                 <div class="row col-12 col-md-4">
-                <p class="fs-4 text-start text-md-end p-text-light-grey">
+                <p class=" text-start text-md-end p-text-light-grey">
                 ${getDateFormatted(project.startDate)}
                   ${project.startDate >= project.endDate && project.startDate <= project.endDate ? "" : ` - ${getDateFormatted(project.endDate)}`}
                 </p>
                 </div>
                 <div class="row col-12 col-md-8 p-1 text-start">
-                <h4 class="p-text-white fs-4">
+                <h5 class="p-text-white ">
                     ${project.name}
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" id="showMeTheDadJokes" class="inline-block project-link" data-bs-toggle="modal" data-bs-target="${project.link}" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" id="showMeTheDadJokes" class="inline-block project-link"  aria-hidden="true">
                     <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path>
                     </svg>
-                </h4>
+                </h5>
                 </div>
             </div>
-            <div class="row col-12 text-center justify-content-start fs-4">
+            <div class="row col-12 text-center justify-content-start ">
                 <div class="col-8 col-md-4 row order-2 order-md-1 justify-content-center fade show">
                     <div class="container">
                         <div class="row justify-content-end ">
@@ -210,6 +211,7 @@ function renderProjects() {
                 </div>
             </div>
         </div>
+      </div>
         `;
 
     projectsContent += projectHTML;

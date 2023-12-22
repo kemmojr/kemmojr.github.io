@@ -147,7 +147,31 @@ a.anchor {
 
 .project-link {
   display: inline-block;
-  height: 3rem;
+  height: 2rem;
+  transition: transform 0.3s ease-out, background-color 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.project {
+  background-color: var(--primary-color);
+  opacity: 1;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+/* .project-background {
+  position: absolute;
+  inset: 1.3rem 1.3rem 1.3rem 1.3rem;
+  background-color: var(--primary-color);
+  opacity: 0.8;
+} */
+
+.project:hover {
+  background-color: #0c0c0c !important;
+  opacity: 0.95 !important;
+  .project-link {
+    transform: translate(4px, -4px);
+    transition: transform 0.1.5s ease-in, background-color 0.3s ease-in, opacity 0.3s ease-in;
+  }
 }
 
 .project-img {
