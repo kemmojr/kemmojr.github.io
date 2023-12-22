@@ -44,6 +44,10 @@ canvas {
 }
 
 #header {
+  top: 25vh;
+}
+
+#header {
   @media (min-width: 992px) {
     max-height: 100vh;
   }
@@ -140,6 +144,12 @@ a.anchor {
   visibility: hidden;
 }
 
+#contact.anchor {
+  bottom: 0px;
+  top: 0;
+  position: fixed;
+}
+
 .loading-bar-cell {
   border: solid 5px #fff;
   fill: #fff;
@@ -155,7 +165,8 @@ a.anchor {
 .project,
 .about,
 .titleText,
-.qualifications {
+.qualifications,
+.contact {
   background-color: var(--primary-color);
   opacity: 1;
   border-radius: 1rem;
@@ -243,4 +254,8 @@ body::-webkit-scrollbar-thumb {
 
 #titleContainer {
   top: 60px;
+}
+
+.w-4rem {
+  width: 4rem;
 }
