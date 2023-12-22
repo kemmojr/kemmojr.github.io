@@ -108,6 +108,7 @@ function render() {
 
 function renderAbout() {
   const aboutContent = `
+  <div class="about">
     <div class="row text-center mb-0">
       <h3 class="p-text-white fs-3 col-12 px-3">About</h3>
     </div>
@@ -120,6 +121,7 @@ function renderAbout() {
       <p class="col-12  mt-3 fade show"> Fatherhood has presented a whole new set of challenges to overcome, from dealing with dirty nappies to trying to wrap my head around Complex SQL with limited sleep.</p>
       <p class="col-12  mt-3 fade show"> As my wife puts it I also like to regularly torture myself by going on long runs and I appreciate the chance to spend hours listening to music that is older than me.</p>
     </div>
+  </div>
   `;
 
   sanitiseAndRenderHTML("aboutContainer", aboutContent);

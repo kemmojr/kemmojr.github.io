@@ -152,7 +152,10 @@ a.anchor {
 }
 
 .experience,
-.project {
+.project,
+.about,
+.titleText,
+.qualifications {
   background-color: var(--primary-color);
   opacity: 1;
   border-radius: 1rem;
