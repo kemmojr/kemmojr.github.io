@@ -60,6 +60,8 @@ function getActiveSection() {
   // Iterate through each section to find which one is in the viewport
   document.querySelectorAll("a.anchor").forEach(section => {
     const sectionTop = section.offsetTop - calculateOffset(); // Adjusted offset for better accuracy
+    //todo: add check for if contact then bottom as it is not in the main element so it's offset top is relative to the screen not the main scrolling element.
+
     //const sectionTop = section.offsetTop - calculateOffset(); // Adjusted offset for better accuracy
     const id = section.getAttribute("id");
 
