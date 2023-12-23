@@ -143,12 +143,12 @@ a.anchor {
   top: -100px;
   visibility: hidden;
 }
-
+/* 
 #contact.anchor {
   bottom: 0px;
   top: 0;
   position: fixed;
-}
+} */
 
 .loading-bar-cell {
   border: solid 5px #fff;

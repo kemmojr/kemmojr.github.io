@@ -31,7 +31,7 @@ function loadListeners() {
     window.scrollTo({ top: 0, scrolling: "smooth" });
   });
 
-  maxScoll = Math.max(document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight); // - window.innerHeight;
+  maxScoll = Math.max(document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight) - window.innerHeight;
 }
 
 function calculateOffset() {
