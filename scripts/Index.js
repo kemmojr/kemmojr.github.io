@@ -6,6 +6,8 @@ const observerOptions = {
   threshold: 0.7
 };
 
+let maxScoll = 0;
+
 function loadListeners() {
   render();
   generateSpace();
@@ -28,6 +30,8 @@ function loadListeners() {
   document.querySelector(".accordion-button").addEventListener("click", ev => {
     window.scrollTo({ top: 0, scrolling: "smooth" });
   });
+
+  maxScoll = Math.max(document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight); // - window.innerHeight;
 }
 
 function calculateOffset() {
@@ -59,11 +63,13 @@ function getActiveSection() {
 
   // Iterate through each section to find which one is in the viewport
   document.querySelectorAll("a.anchor").forEach(section => {
-    const sectionTop = section.offsetTop - calculateOffset(); // Adjusted offset for better accuracy
+    let sectionTop = section.offsetTop - calculateOffset(); // Adjusted offset for better accuracy
     //todo: add check for if contact then bottom as it is not in the main element so it's offset top is relative to the screen not the main scrolling element.
 
     //const sectionTop = section.offsetTop - calculateOffset(); // Adjusted offset for better accuracy
     const id = section.getAttribute("id");
+
+    if (id === "contact") sectionTop = maxScoll - sectionTop;
 
     if (scrollPosition >= sectionTop) {
       // Remove active class from all links
