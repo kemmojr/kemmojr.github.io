@@ -8,12 +8,12 @@ const experience = [
     position: "Software Engineer",
     company: "GTICK Systems",
     blurb: [
-      `Starting my career as a Software Engineer while still studying, I acquired skills on the job, often ahead of my coursework. Focused on revitalizing an established internal business management software, my efforts optimized daily
-        operations, enhanced employee productivity, and facilitated intricate data management.`,
-      `Within this web application, my contributions constitute 50% authorship of an eight-year-old project, encompassing 7,500 personal file changes. Moreover, I modernized the entire API layer and devised a more dynamic frontend,
-        significantly expediting our development processes.`,
-      `As part of a six-person engineering team, I contributed to a multi-million-dollar software integral across the mining pipeline. I personally designed operational pages, created essential data visualizations, and developed an
-         large-scale database API integrator.`
+      `Starting my career as a Software Engineer while still studying, I acquired skills on the job, often ahead of my coursework. 
+      Focused on revitalizing an established internal business management software, my efforts optimized daily operations, enhanced employee productivity, and facilitated intricate data management.`,
+      `Within this web application, my contributions constitute 50% authorship of an eight-year-old project, encompassing 7,500 personal file changes. 
+      Moreover, I modernized the entire API layer and devised a more dynamic front end, expediting our development processes.`,
+      `As part of a six-person engineering team, I contributed to a multi-million-dollar software product integral across the mining pipeline. 
+      I designed operational pages, created essential data visualizations, and developed a large-scale database API integrator.`
     ],
     skills: ["SQL", "C#", "JavaScript", "C# Web API", "JSON"]
   },
