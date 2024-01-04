@@ -11,6 +11,9 @@ Joust recreation - 2018
 */
 
 const blurbFS = 6;
+const degree = {
+  skills: ["Java", "C++", "SQL", "JavaScript", "Python"]
+};
 const experience = [
   {
     startDate: new Date("2021-07-01"),
@@ -163,7 +166,7 @@ function renderEducation() {
               </p>
                     <div class="col-12 container">
                         <div class="text-center justify-content-start">
-                            ${/*record.skills.map(skill => `<h5 class="m-2 skill rounded-pill text-center d-inline-flex">${skill}</h5>`).join()*/ ""}                            
+                            ${degree.skills.map(skill => `<h5 class="m-2 skill rounded-pill text-center d-inline-flex">${skill}</h5>`).join()}
                         </div>
                     </div>
                   </div>
