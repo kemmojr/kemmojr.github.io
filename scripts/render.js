@@ -70,7 +70,7 @@ const projects = [
   },
   {
     startDate: new Date("2018-02-01"),
-    endDate: new Date("2023-07-01"),
+    endDate: new Date("2018-07-01"),
     name: "Joust Re-creation",
     link: "#missingModal",
     // link: "#joustModal", seems to be an error with importing the whole html. todo
