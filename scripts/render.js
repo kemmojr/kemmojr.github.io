@@ -1,5 +1,15 @@
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
+/*
+Dad Joke generator - 2023
+run analyzer - manual upload - 2023
+run analyzer - API integrated (in development) - 2023
+Portfolio Website - 2023
+battleships with web sockets - 2022
+towers of hanoi - 2021
+Joust recreation - 2018
+*/
+
 const blurbFS = 6;
 const experience = [
   {
