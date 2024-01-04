@@ -56,8 +56,8 @@ const projects = [
     skills: ["C#", "JavaScript", "C# Web API", "JSON", "REST API", "Python"]
   },
   {
-    startDate: new Date("2023-12-01"),
-    endDate: new Date("2023-12-01"),
+    startDate: new Date("2016-12-01"),
+    endDate: new Date("2016-12-01"),
     name: "Flash platformer",
     link: "#missingModal",
     image: `./images/flash.png`,
