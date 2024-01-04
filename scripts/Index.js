@@ -32,6 +32,8 @@ function loadListeners() {
   });
 
   maxScoll = Math.max(document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight) - window.innerHeight;
+
+  loadPage();
 }
 
 function calculateOffset() {
@@ -112,4 +114,15 @@ function observerCallback(entries, observer) {
       entry.target.classList.add("show");
     }
   });
+}
+
+async function loadPage() {
+  fetch("../repos/Joust-re-creation/Index.html")
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById("joustModalContainer").innerHTML = html;
+    })
+    .catch(error => {
+      console.log("Error fetching the page:", error);
+    });
 }

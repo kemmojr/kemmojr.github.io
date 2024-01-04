@@ -216,11 +216,7 @@ kemmis"
         </a>
       </div>
     </footer>
-    <dialog id="dadJokeGenerator" class="dad-joke-modal w-75">
-      <form method="dialog" class="d-flex justify-content-end">
-        <button class="btn-close" type="close"></button>
-      </form>
-    </dialog>
+
     <div class="modal fade" id="dadJokeModal" tabindex="-1" aria-labelledby="dadJokeModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -237,6 +233,23 @@ kemmis"
                 <p class="text-black" id="currentDadJoke"></p>
               </div>
             </div>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="joustModal" tabindex="-1" aria-labelledby="joustModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 text-black" id="joustModalLabel">Joust</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div id="joustModalContainer" class="text-center"> </div>
           </div>
           <div class="modal-footer justify-content-center">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
