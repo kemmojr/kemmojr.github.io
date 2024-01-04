@@ -74,12 +74,8 @@ const projects = [
     name: "Joust Re-creation",
     link: "#missingModal",
     // link: "#joustModal", seems to be an error with importing the whole html. todo
-    hasImage: false,
-    image: `
-        <div>
-           
-        </div>
-    `,
+    hasImage: true,
+    image: `./images/Joust.png`,
     blurb: [
       `One of my earliest fully fledged computing projects, this was a school project with very open guidelines. The brief was to just create a program in some capacity but I decided to go all out and try to faithfully recreate an 80's arcade game in a web browser.<br />
       I ended up spending many many hours working on the application and recieved the top mark for the class. In the process I taught myself the basics of JavaScript programming, albeit in a very hacky way.<br />
