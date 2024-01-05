@@ -177,7 +177,7 @@ function renderEducation() {
               <div class="col-md-4 row"></div>
               <div class="col-12 col-md-8 flex-grow-1">
               <p class="text-start fade show">
-                Completing a degree in computer science enabled me to learn various skills and refine existing ones. I learnt the fundamentals of programming and data structures, I gained a fundamental understanding of the software of computers, how they operate and their communication protocols. 
+                Completing a degree in computer science enabled me to learn various skills and refine existing ones. I learnt the fundamentals of programming and data structures, I gained a fundamental understanding of the software of computers including how they operate and their communication protocols. 
               </p>
                     <div class="col-12 container">
                         <div class="text-center justify-content-start">
