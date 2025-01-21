@@ -16,8 +16,29 @@ const degree = {
 };
 const experience = [
   {
-    startDate: new Date("2021-07-01"),
+    startDate: new Date("2024-03-01"),
     endDate: null,
+    position: "Software Engineer",
+    company: "BISCIT",
+    blurb: [
+      `My second software engineering role. A whole bunch more to learn, and new interesting problems to solve.
+       BISCIT are ERP specialists, specifically for Epicor, and I was invloved in working on developing products that seamlessly integrate with Epicor to extend it's functionality.
+       I have worked on two projects so far, RMS a rental management system and EKW, Epicor Kinetic Warehouse.
+       
+       RMS's value add is that it allows for the extension of trackable depreciating assets to Epicor. 
+       Whilst it utilises the custom Epicor tooling and APIs to store the entirety of it's database within the customers own Epicor instance. 
+       I helped assist in the implementation of this new database solution and moving from the previous MS SQL database. 
+       I also learnt Angular whilst working on this project, improving my frontend skills.
+       Collaboration and teamwork was a big part of being on this larger team and I was able to improve my communication skills with code reviews and regular informal pair programming sessions, both teaching and learning.
+      
+      EKW is the company's flagship product, and has very mature processes with a lot more automations to improve stability. 
+       Have been working within the team, improving my knowlege of Angular further and getting a deeper understanding of the inner workings of Epicor`
+    ],
+    skills: ["Angular", "C#/DotNet 8", "TypeScript", "Tailwind", "Git", "Code Review", "Databases"]
+  },
+  {
+    startDate: new Date("2021-07-01"),
+    endDate: new Date("2024-03-01"),
     position: "Software Engineer",
     company: "GTICK Systems",
     blurb: [
@@ -147,7 +168,7 @@ function renderAbout() {
       </p>
     </div>
     <div class="row justify-content-center">
-      <p class="col-12  mt-3 fade show"> Fatherhood has presented a whole new set of challenges to overcome, from dealing with dirty nappies to trying to wrap my head around Complex SQL with limited sleep.</p>
+      <p class="col-12  mt-3 fade show"> Fatherhood has presented a whole new set of challenges to overcome, from trying to stop a toddler from eating everything in sight to trying to program with a child that thinks pressing power buttons is a great game.</p>
       <p class="col-12  mt-3 fade show"> As my wife puts it I also like to regularly torture myself by going on long runs and I appreciate the chance to spend hours listening to music that is older than me.</p>
     </div>
   </div>
@@ -258,7 +279,7 @@ function renderProjects() {
                 <div class="row col-12 col-md-8 p-1 text-start">
                 <h5 class="p-text-white ">
                     ${project.name}
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" id="showMeTheDadJokes" class="inline-block project-link"  aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="inline-block project-link"  aria-hidden="true">
                     <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path>
                     </svg>
                 </h5>
