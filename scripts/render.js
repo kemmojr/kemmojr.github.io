@@ -23,15 +23,13 @@ const experience = [
     blurb: [
       `My second software engineering role. A whole bunch more to learn, and new interesting problems to solve.
        BISCIT are ERP specialists, specifically for Epicor, and I was invloved in working on developing products that seamlessly integrate with Epicor to extend it's functionality.
-       I have worked on two projects so far, RMS a rental management system and EKW, Epicor Kinetic Warehouse.
-       
-       RMS's value add is that it allows for the extension of trackable depreciating assets to Epicor. 
+       I have worked on two projects so far, RMS a rental management system and EKW, Epicor Kinetic Warehouse.`,
+      `RMS's value add is that it allows for the extension of trackable depreciating assets to Epicor. 
        Whilst it utilises the custom Epicor tooling and APIs to store the entirety of it's database within the customers own Epicor instance. 
-       I helped assist in the implementation of this new database solution and moving from the previous MS SQL database. 
-       I also learnt Angular whilst working on this project, improving my frontend skills.
-       Collaboration and teamwork was a big part of being on this larger team and I was able to improve my communication skills with code reviews and regular informal pair programming sessions, both teaching and learning.
-      
-      EKW is the company's flagship product, and has very mature processes with a lot more automations to improve stability. 
+       I helped assist in the implementation of this new database solution and moving from the previous MS SQL database. `,
+      `I also learnt Angular whilst working on this project, improving my frontend skills.
+       Collaboration and teamwork was a big part of being on this larger team and I was able to improve my communication skills with code reviews and regular informal pair programming sessions, both teaching and learning.`,
+      `EKW is the company's flagship product, and has very mature processes with a lot more automations to improve stability. 
        Have been working within the team, improving my knowlege of Angular further and getting a deeper understanding of the inner workings of Epicor`
     ],
     skills: ["Angular", "C#/DotNet 8", "TypeScript", "Tailwind", "Git", "Code Review", "Databases"]
