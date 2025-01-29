@@ -194,7 +194,7 @@ function renderAbout() {
       </p>
     </div>
     <div class="row justify-content-center">
-      <p class="col-12  mt-3 fade show"> Fatherhood has presented a whole new set of challenges to overcome, from trying to stop a toddler from eating everything in sight to trying to program with a child that thinks pressing power buttons is a great game.</p>
+      <p class="col-12  mt-3 fade show"> Fatherhood has presented a whole new set of challenges to overcome, from trying to stop a toddler from eating everything in sight, to trying to program with a child that thinks pressing power buttons is a great game.</p>
       <p class="col-12  mt-3 fade show"> I also enjoy getting into the guts of computers and upgrading them with better hardware and a much improved Operating System.</p>
     </div>
   </div>
