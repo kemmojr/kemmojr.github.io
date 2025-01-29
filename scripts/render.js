@@ -18,34 +18,26 @@ const experience = [
   {
     startDate: new Date("2024-03-01"),
     endDate: null,
-    position: "Software Engineer",
+    position: "My second software engineering role",
     company: "BISCIT",
     blurb: [
-      `My second software engineering role. A whole bunch more to learn, and new interesting problems to solve.
-       BISCIT are ERP specialists, specifically for Epicor, and I was invloved in working on developing products that seamlessly integrate with Epicor to extend it's functionality.
-       I have worked on two projects so far, RMS a rental management system and EKW, Epicor Kinetic Warehouse.`,
-      `RMS's value add is that it allows for the extension of trackable depreciating assets to Epicor. 
-       Whilst it utilises the custom Epicor tooling and APIs to store the entirety of it's database within the customers own Epicor instance. 
-       I helped assist in the implementation of this new database solution and moving from the previous MS SQL database. `,
-      `I also learnt Angular whilst working on this project, improving my frontend skills.
-       Collaboration and teamwork was a big part of being on this larger team and I was able to improve my communication skills with code reviews and regular informal pair programming sessions, both teaching and learning.`,
-      `EKW is the company's flagship product, and has very mature processes with a lot more automations to improve stability. 
-       Have been working within the team, improving my knowlege of Angular further and getting a deeper understanding of the inner workings of Epicor`
+      `BISCIT are ERP specialists, focusing on Epicor. I worked on developing products that seamlessly integrate with Epicor to extend its functionality. Two of products include RMS - a rental management system and EKW - Epicor Kinetic Warehouse.`,
+      `RMS allows for the extension of trackable depreciating assets whilst utilising custom Epicor tooling. The APIs store the entirety of its database within the customers own Epicor instance. I helped implement a new database solution by migrating from a previous MS SQL database. During this, I learned Angular and improved my frontend skills. `,
+      `Collaboration and teamwork was key in this larger team project. I improved my listening and communication skills through code reviews and regular informal pair programming sessions. `,
+      `EKW is the company's flagship product with mature processes and automations for stability. Working in this team improved my knowledge of Angular and allowed me to gain a deeper understanding of Epicor's inner workings. `
     ],
-    skills: ["Angular", "C#/DotNet 8", "TypeScript", "Tailwind", "Git", "Code Review", "Databases"]
+    skills: ["Angular", "C#/DotNet 8", "TypeScript", "Tailwind", "Git", "Databases"]
   },
   {
     startDate: new Date("2021-07-01"),
     endDate: new Date("2024-03-01"),
-    position: "Software Engineer",
+    position: "My first internship and graduate role",
     company: "GTICK Systems",
     blurb: [
-      `Starting my career as a Software Engineer while still studying, I acquired skills on the job, often ahead of my coursework. 
-      Focused on revitalizing an established internal business management software, my efforts optimized daily operations, enhanced employee productivity, and facilitated intricate data management.`,
-      `Within this web application, my contributions constitute 50% authorship of an eight-year-old project, encompassing 7,500 personal file changes. 
-      Moreover, I modernized the entire API layer and devised a more dynamic front end, expediting our development processes.`,
-      `As part of a six-person engineering team, I contributed to a multi-million-dollar software product integral across the mining pipeline. 
-      I designed operational pages, created essential data visualizations, and developed a large-scale database API integrator.`
+      `I commenced my Software Engineer career while finishing my degree. Acquiring workplace skills as an intern, increased the value of my coursework. `,
+      `As a graduate, I focused on revitalizing established internal business management software. I optimised daily operations, enhanced employee productivity, and facilitated intricate data management.`,
+      `My contributions constitute 50% authorship of an eight-year-old project, encompassing 7,500 personal file changes. I modernized the entire API layer and deployed a dynamic front end, expediting our development processes.`,
+      `As part of a six-person engineering team, I contributed to a multi-million-dollar software product integral across the mining pipeline. I designed operational pages, created essential data visualizations, and developed a large-scale database API integrator.`
     ],
     skills: ["SQL", "C#", "JavaScript", "C# Web API", "JSON"]
   },
@@ -60,6 +52,42 @@ const experience = [
 ];
 
 const projects = [
+  {
+    startDate: new Date("2025-01-23"),
+    endDate: null,
+    name: "Thinkpad t430 revival",
+    link: "#picturesToComeModal",
+    hasImage: false,
+    image: `💻`,
+    blurb: [
+      `My current project, attempting to learn and revive a beauty of a laptop. I am in the process of flashing a custom BIOS, which will hopefully fix the minor issue of the machine currently not booting.`,
+      ` Then it is just fun and games with the arch linux CLI install`
+    ],
+    skills: ["SPI programming", "laptop disassembly", "Arch Linux"]
+  },
+  {
+    startDate: new Date("2024-11-01"),
+    endDate: new Date("2024-11-15"),
+    name: "snake re-creation",
+    link: "#snakeModal",
+    hasImage: false,
+    image: `🐍`,
+    blurb: [`A little project to recreate snake, a game I used to play on my old Nokia phone. The main inspiration for the project was wanting to get my feet wet with the godot game engine.`],
+    skills: ["Godot", "GDScript", "Game Development"]
+  },
+  {
+    startDate: new Date("2024-07-01"),
+    endDate: new Date("2024-08-01"),
+    name: "The first laptop revival",
+    link: "#picturesToComeModal",
+    hasImage: false,
+    image: `💻`,
+    blurb: [
+      `Breathing new life into an unused old laptop. I installed arch linux over the span of a few weeks, learning a bunch about the linux CLI and the inner workings of computers.`,
+      ` And it is the machine I am currently typing this on, so I would call it a success`
+    ],
+    skills: ["Linux", "Operating systems", "CLI"]
+  },
   {
     startDate: new Date("2023-12-01"),
     endDate: new Date("2023-12-01"),
@@ -162,12 +190,12 @@ function renderAbout() {
     </div>
     <div class="row justify-content-center fade show">
       <p class="col-12  mt-1">
-        I currently spend my time professionally in the world of full-stack web development. I love the variety and diversity of being able to work on new projects every day and I enjoy the challenge that each project brings.
+        I currently spend my time professionally in the world of full-stack web development. I love the variety and diversity of being able to work on something different each day, and have a special love for backend.
       </p>
     </div>
     <div class="row justify-content-center">
       <p class="col-12  mt-3 fade show"> Fatherhood has presented a whole new set of challenges to overcome, from trying to stop a toddler from eating everything in sight to trying to program with a child that thinks pressing power buttons is a great game.</p>
-      <p class="col-12  mt-3 fade show"> As my wife puts it I also like to regularly torture myself by going on long runs and I appreciate the chance to spend hours listening to music that is older than me.</p>
+      <p class="col-12  mt-3 fade show"> I also enjoy getting into the guts of computers and upgrading them with better hardware and a much improved Operating System.</p>
     </div>
   </div>
   `;
@@ -196,7 +224,7 @@ function renderEducation() {
               <div class="col-md-4 row"></div>
               <div class="col-12 col-md-8 flex-grow-1">
               <p class="text-start fade show">
-                Completing a degree in computer science enabled me to learn various skills and refine existing ones. I learnt the fundamentals of programming and data structures, I gained a fundamental understanding of the software of computers including how they operate and their communication protocols. 
+                Completing a degree in computer science enabled me to learn various skills and refine existing ones. I learnt the fundamentals of programming and data structures, I gained a fundamental understanding of the software of computers including how they operate and their communication protocols.
               </p>
                     <div class="col-12 container">
                         <div class="text-center justify-content-start">
@@ -234,10 +262,10 @@ function renderExperience() {
               <div class="row col-12 text-center justify-content-start mt-3 ">
               <div class="col-md-4 row"></div>
               <div class="col-12 col-md-8 flex-grow-1">
-              ${record.blurb.map(pText => `<p class="text-start fade show">${pText}</p>`).join()}                    
+              ${record.blurb.map(pText => `<p class="text-start fade show">${pText}</p>`).join(`<br />`)}
                     <div class="col-12 container">
                         <div class="text-center justify-content-start">
-                            ${record.skills.map(skill => `<h5 class="m-2 skill rounded-pill text-center d-inline-flex">${skill}</h5>`).join()}                            
+                            ${record.skills.map(skill => `<h5 class="m-2 skill rounded-pill text-center d-inline-flex">${skill}</h5>`).join()}
                         </div>
                     </div>
                   </div>
@@ -293,7 +321,7 @@ function renderProjects() {
                         </div>
                     </div>
                 </div>
-                ${project.blurb.map(blurb => `<p class="col-8 text-start flex-grow-1 order-1 order-md-2 fade show">${blurb}</p>`).join()}
+                ${project.blurb.map(blurb => `<p class="col-8 text-start flex-grow-1 order-1 order-md-2 fade show">${blurb}</p>`).join(`<br />`)}
             </div>
             <div class="col-12 col-sm-6 col-md-6 container mt-4 pb-2 fade show">
                 <div class="text-center justify-content-start">
