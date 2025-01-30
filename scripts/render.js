@@ -60,8 +60,7 @@ const projects = [
     hasImage: false,
     image: `💻`,
     blurb: [
-      `My current project, attempting to learn and revive a beauty of a laptop. I am in the process of flashing a custom BIOS, which will hopefully fix the minor issue of the machine currently not booting.`,
-      ` Then it is just fun and games with the arch linux CLI install`
+      `My current project, attempting to learn and revive a beauty of a laptop. I am in the process of flashing a custom BIOS, which will hopefully fix the minor issue of the machine currently not booting. Then it is just fun and games with the arch linux CLI install`
     ],
     skills: ["SPI programming", "laptop disassembly", "Arch Linux"]
   },
@@ -83,8 +82,7 @@ const projects = [
     hasImage: false,
     image: `💻`,
     blurb: [
-      `Breathing new life into an unused old laptop. I installed arch linux over the span of a few weeks, learning a bunch about the linux CLI and the inner workings of computers.`,
-      `And it is the machine I am currently typing this on, so I would call it a success.`
+      `Breathing new life into an unused old laptop. I installed arch linux over the span of a few weeks, learning a bunch about the linux CLI and the inner workings of computers. And it is the machine I am currently typing this on, so I would call it a success.`
     ],
     skills: ["Linux", "Operating systems", "CLI"]
   },
