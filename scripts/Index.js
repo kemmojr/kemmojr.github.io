@@ -85,7 +85,7 @@ function getActiveSection() {
   if (scrollPosition > 1 && document.querySelector(".custom-accordion").classList.contains("fade-out")) {
     document.querySelector(".accordion-button").classList.remove("collapsed");
     document.querySelector(".custom-accordion").classList.toggle("fade-out");
-  } else if (scrollPosition === 0 && !document.querySelector(".custom-accordion").classList.contains("fade-out")) {
+  } else if (scrollPosition === 0 && document && !document.querySelector(".custom-accordion").classList.contains("fade-out")) {
     setTimeout(() => {
       document.querySelector(".custom-accordion").classList.toggle("fade-out");
     }, 500);
