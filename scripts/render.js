@@ -56,7 +56,7 @@ const projects = [
     startDate: new Date("2025-01-23"),
     endDate: null,
     name: "Thinkpad t430 revival",
-    link: "#picturesToComeModal",
+    link: "#t430Modal",
     hasImage: false,
     image: `💻`,
     blurb: [
@@ -79,12 +79,12 @@ const projects = [
     startDate: new Date("2024-07-01"),
     endDate: new Date("2024-08-01"),
     name: "The first laptop revival",
-    link: "#picturesToComeModal",
+    link: "#ideaPadModal",
     hasImage: false,
     image: `💻`,
     blurb: [
       `Breathing new life into an unused old laptop. I installed arch linux over the span of a few weeks, learning a bunch about the linux CLI and the inner workings of computers.`,
-      ` And it is the machine I am currently typing this on, so I would call it a success`
+      `And it is the machine I am currently typing this on, so I would call it a success.`
     ],
     skills: ["Linux", "Operating systems", "CLI"]
   },
