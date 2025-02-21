@@ -1,0 +1,255 @@
+@import url(Palette.css);
+@font-face {
+  font-family: "star-jedi";
+  src: url("../fonts/Starjedi.ttf");
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: black;
+  max-width: 99vw;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "star-jedi";
+  font-weight: normal;
+  font-style: normal;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  background-color: black;
+}
+
+#parent {
+  position: relative;
+  z-index: 1;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+#nameTitle {
+  font-size: xx-large;
+  font-size: 3rem !important;
+}
+
+#header {
+  top: 25vh;
+}
+
+#header {
+  @media (min-width: 992px) {
+    max-height: 100vh;
+  }
+}
+
+#header {
+  @media (max-width: 992px) {
+    position: relative !important;
+  }
+}
+
+/* .thumbnail-link svg:hover {
+  fill: var(--secondary-color);
+} */
+
+.thumbnail-link:hover {
+  background-color: #fff;
+
+  svg {
+    fill: var(--secondary-color);
+  }
+}
+
+#links-offcanvas {
+  @media (min-width: 992px) {
+    display: none !important;
+  }
+}
+
+p {
+  color: var(--p-color);
+}
+
+.p {
+  color: var(--p-color);
+}
+
+.nav-indicator {
+  border: 1px solid var(--p-color);
+  width: 2rem;
+}
+
+.active .nav-indicator {
+  width: 4rem !important;
+  border-color: var(--white-color) !important;
+}
+
+.active .nav-text {
+  color: var(--white-color);
+  font-weight: bold;
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.nav-list li {
+  padding: 0.6rem;
+}
+
+a,
+.transition {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+}
+
+nav {
+  @media (min-width: 992px) {
+    position: static !important;
+  }
+}
+
+#header {
+  @media (min-width: 992px) {
+    max-width: 25vw;
+  }
+}
+
+#content {
+  @media (min-width: 992px) {
+    max-width: 75vw;
+  }
+}
+
+.nav-list:first-child > a {
+  background-color: red !important;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
+
+.loading-bar-cell {
+  border: solid 5px #fff;
+  fill: #fff;
+}
+
+.project-link {
+  display: inline-block;
+  height: 2rem;
+  transition: transform 0.3s ease-out, background-color 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.experience,
+.project,
+.about,
+.titleText,
+.qualifications,
+.contact {
+  background-color: var(--primary-color);
+  opacity: 1;
+  border-radius: 1rem;
+  border: 2px solid transparent;
+}
+
+.project {
+  cursor: pointer;
+}
+
+/* .project-background {
+  position: absolute;
+  inset: 1.3rem 1.3rem 1.3rem 1.3rem;
+  background-color: var(--primary-color);
+  opacity: 0.8;
+} */
+
+.experience:hover,
+.project:hover {
+  background-color: hsl(0, 0%, 4%) !important;
+  border: 2px solid var(--white-color);
+  opacity: 0.95 !important;
+  .project-link {
+    transform: translate(4px, -4px);
+    transition: transform 0.1.5s ease-in, background-color 0.3s ease-in, opacity 0.3s ease-in;
+  }
+}
+
+.project-img {
+  height: auto;
+  width: 100%;
+}
+
+.skill {
+  border: 2.5px solid hsl(118, 85%, 24%);
+  border-radius: var(--bs-border-radius-3);
+  background-color: hsl(118, 85%, 24%);
+  color: hsl(118.22deg 70.12% 90%);
+  font-size: 10pt;
+  padding: 13px;
+}
+
+.custom-accordion {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+
+/* fade  */
+
+.fade-out {
+  opacity: 0;
+}
+
+.fade {
+  transition: opacity 0.3s ease-out !important;
+}
+
+/* scroll bar */
+
+body {
+  --sb-track-color: #222222;
+  --sb-thumb-color: #c5d6ef;
+  --sb-size: 10px;
+
+  scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 10px;
+}
+
+/* Or use transform to scale */
+.svg-container svg {
+  transform: scale(1.6); /* Scale the SVG by a factor of 2 */
+}
+
+#titleContainer {
+  top: 60px;
+}
+
+.w-4rem {
+  width: 4rem;
+}
