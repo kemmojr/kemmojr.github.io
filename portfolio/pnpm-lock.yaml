@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      '@sveltejs/adapter-cloudflare':
+        specifier: ^5.0.3
+        version: 5.0.3(@sveltejs/kit@2.17.2(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.20.2)(vite@6.1.1(jiti@2.4.2)(lightningcss@1.29.1)))(svelte@5.20.2)(vite@6.1.1(jiti@2.4.2)(lightningcss@1.29.1)))(wrangler@3.109.2(@cloudflare/workers-types@4.20250214.0))
     devDependencies:
       '@eslint/compat':
         specifier: ^1.2.5
@@ -14,9 +18,6 @@ importers:
       '@eslint/js':
         specifier: ^9.18.0
         version: 9.21.0
-      '@sveltejs/adapter-cloudflare':
-        specifier: ^5.0.1
-        version: 5.0.3(@sveltejs/kit@2.17.2(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.20.2)(vite@6.1.1(jiti@2.4.2)(lightningcss@1.29.1)))(svelte@5.20.2)(vite@6.1.1(jiti@2.4.2)(lightningcss@1.29.1)))(wrangler@3.109.2(@cloudflare/workers-types@4.20250214.0))
       '@sveltejs/kit':
         specifier: ^2.16.0
         version: 2.17.2(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.20.2)(vite@6.1.1(jiti@2.4.2)(lightningcss@1.29.1)))(svelte@5.20.2)(vite@6.1.1(jiti@2.4.2)(lightningcss@1.29.1))

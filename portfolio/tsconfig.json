@@ -1,5 +1,6 @@
 {
 	"extends": "./.svelte-kit/tsconfig.json",
+	"exclude": ["node_modules", "public", "static", "portfolio_bak"],
 	"compilerOptions": {
 		"allowJs": true,
 		"checkJs": true,

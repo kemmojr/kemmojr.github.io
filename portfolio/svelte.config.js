@@ -8,7 +8,18 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
-		adapter: adapter()
+		adapter: adapter({
+			routes: {
+				include: ['/*'],
+				exclude: ['<all>']
+			},
+			platformProxy: {
+				configPath: undefined,
+				environment: undefined,
+				experimentalJsonConfig: false,
+				persist: false
+			}
+		})
 	}
 };
 
