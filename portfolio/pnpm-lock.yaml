@@ -11,6 +11,9 @@ importers:
       '@sveltejs/adapter-cloudflare':
         specifier: ^5.0.3
         version: 5.0.3(@sveltejs/kit@2.17.2(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.20.2)(vite@6.1.1(jiti@2.4.2)(lightningcss@1.29.1)))(svelte@5.20.2)(vite@6.1.1(jiti@2.4.2)(lightningcss@1.29.1)))(wrangler@3.109.2(@cloudflare/workers-types@4.20250214.0))
+      posthog-js:
+        specifier: ^1.223.3
+        version: 1.223.3(@rrweb/types@2.0.0-alpha.17)
     devDependencies:
       '@eslint/compat':
         specifier: ^1.2.5
@@ -712,6 +715,9 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@rrweb/types@2.0.0-alpha.17':
+    resolution: {integrity: sha512-AfDTVUuCyCaIG0lTSqYtrZqJX39ZEYzs4fYKnexhQ+id+kbZIpIJtaut5cto6dWZbB3SEe4fW0o90Po3LvTmfg==}
+
   '@sveltejs/adapter-cloudflare@5.0.3':
     resolution: {integrity: sha512-jRJmt3JtGp5ockFxoDLKPisK0RPGnitNfHS9+xhRTpRaBV7jS/fQfAmpaey7rwKWaDUnkoHx0DV0WvISHNfUEA==}
     peerDependencies:
@@ -976,6 +982,9 @@ packages:
     resolution: {integrity: sha512-U71cyTamuh1CRNCfpGY6to28lxvNwPG4Guz/EVjgf3Jmzv0vlDp1atT9eS5dDjMYHucpHbWns6Lwf3BKz6svdw==}
     engines: {node: '>= 0.6'}
 
+  core-js@3.40.0:
+    resolution: {integrity: sha512-7vsMc/Lty6AGnn7uFpYT56QesI5D2Y/UkgKounk87OP9Z2H9Z8kj6jzcSGAxFmUtDOS0ntK6lbQz+Nsa0Jj6mQ==}
+
   cross-spawn@7.0.6:
     resolution: {integrity: sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==}
     engines: {node: '>= 8'}
@@ -1145,6 +1154,9 @@ packages:
     peerDependenciesMeta:
       picomatch:
         optional: true
+
+  fflate@0.4.8:
+    resolution: {integrity: sha512-FJqqoDBR00Mdj9ppamLa/Y7vxm+PRmNWA67N846RvsoYVMKB4q3y/de5PA7gUmRMYK/8CMz2GDZQmCRN1wBcWA==}
 
   file-entry-cache@8.0.0:
     resolution: {integrity: sha512-XXTUwCvisa5oacNGRP9SfNtYBNAMi+RPwBFmblZEF7N7swHYQS6/Zfk7SRwx4D5j3CH211YNRco1DEMNVfZCnQ==}
@@ -1482,6 +1494,14 @@ packages:
     resolution: {integrity: sha512-dle9A3yYxlBSrt8Fu+IpjGT8SY8hN0mlaA6GY8t0P5PjIOZemULz/E2Bnm/2dcUOena75OTNkHI76uZBNUUq3A==}
     engines: {node: ^10 || ^12 || >=14}
 
+  posthog-js@1.223.3:
+    resolution: {integrity: sha512-ZQTc17M21IzkQmECJa2Xjont4tZrvIn252uGT3sTfmahTqZoW4j+kBj4eOJt9SNR6hOheFNkg7MSiI/rA6FaDA==}
+    peerDependencies:
+      '@rrweb/types': 2.0.0-alpha.17
+
+  preact@10.26.2:
+    resolution: {integrity: sha512-0gNmv4qpS9HaN3+40CLBAnKe0ZfyE4ZWo5xKlC1rVrr0ckkEvJvAQqKaHANdFKsGstoxrY4AItZ7kZSGVoVjgg==}
+
   prelude-ls@1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
@@ -1592,6 +1612,9 @@ packages:
     resolution: {integrity: sha512-489gTVMzAYdiZHFVA/ig/iYFllCcWFHMvUHI1rpFmkoUtRlQxqh6/yiNqnYibjMZ2b/+FUQwldG+aLsEt6bglQ==}
     engines: {node: '>=18.0.0', npm: '>=8.0.0'}
     hasBin: true
+
+  rrweb-snapshot@2.0.0-alpha.18:
+    resolution: {integrity: sha512-hBHZL/NfgQX6wO1D9mpwqFu1NJPpim+moIcKhFEjVTZVRUfCln+LOugRc4teVTCISYHN8Cw5e2iNTWCSm+SkoA==}
 
   run-parallel@1.2.0:
     resolution: {integrity: sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==}
@@ -1778,6 +1801,9 @@ packages:
     peerDependenciesMeta:
       vite:
         optional: true
+
+  web-vitals@4.2.4:
+    resolution: {integrity: sha512-r4DIlprAGwJ7YM11VZp4R884m0Vmgr6EAKe3P+kO0PPj3Unqyvv59rczf6UiGcb9Z8QxZVcqKNwv/g0WNdWwsw==}
 
   which@2.0.2:
     resolution: {integrity: sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==}
@@ -2253,6 +2279,10 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.34.8':
     optional: true
 
+  '@rrweb/types@2.0.0-alpha.17':
+    dependencies:
+      rrweb-snapshot: 2.0.0-alpha.18
+
   '@sveltejs/adapter-cloudflare@5.0.3(@sveltejs/kit@2.17.2(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.20.2)(vite@6.1.1(jiti@2.4.2)(lightningcss@1.29.1)))(svelte@5.20.2)(vite@6.1.1(jiti@2.4.2)(lightningcss@1.29.1)))(wrangler@3.109.2(@cloudflare/workers-types@4.20250214.0))':
     dependencies:
       '@cloudflare/workers-types': 4.20250214.0
@@ -2533,6 +2563,8 @@ snapshots:
 
   cookie@0.6.0: {}
 
+  core-js@3.40.0: {}
+
   cross-spawn@7.0.6:
     dependencies:
       path-key: 3.1.1
@@ -2756,6 +2788,8 @@ snapshots:
       reusify: 1.0.4
 
   fdir@6.4.3: {}
+
+  fflate@0.4.8: {}
 
   file-entry-cache@8.0.0:
     dependencies:
@@ -3043,6 +3077,16 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
+  posthog-js@1.223.3(@rrweb/types@2.0.0-alpha.17):
+    dependencies:
+      '@rrweb/types': 2.0.0-alpha.17
+      core-js: 3.40.0
+      fflate: 0.4.8
+      preact: 10.26.2
+      web-vitals: 4.2.4
+
+  preact@10.26.2: {}
+
   prelude-ls@1.2.1: {}
 
   prettier-plugin-svelte@3.3.3(prettier@3.5.2)(svelte@5.20.2):
@@ -3110,6 +3154,10 @@ snapshots:
       '@rollup/rollup-win32-ia32-msvc': 4.34.8
       '@rollup/rollup-win32-x64-msvc': 4.34.8
       fsevents: 2.3.3
+
+  rrweb-snapshot@2.0.0-alpha.18:
+    dependencies:
+      postcss: 8.5.3
 
   run-parallel@1.2.0:
     dependencies:
@@ -3291,6 +3339,8 @@ snapshots:
   vitefu@1.0.5(vite@6.1.1(jiti@2.4.2)(lightningcss@1.29.1)):
     optionalDependencies:
       vite: 6.1.1(jiti@2.4.2)(lightningcss@1.29.1)
+
+  web-vitals@4.2.4: {}
 
   which@2.0.2:
     dependencies:
